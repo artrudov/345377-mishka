@@ -16,6 +16,7 @@
   @include reset-indent;
   padding-top: 24px;
   padding-bottom: 18px;
+
   @include font-regular (15px, 400, normal, 24px, $content-color);
 }
 
