@@ -1,10 +1,23 @@
 .contacts {
-  @include main-padding (45px, 30px, 39px, 30px);
+  @include main-padding (45px, 0, 39px, 0);
+}
+
+.contacts .section-header {
+  padding: 0 30px;
 }
 
 .contacts__frame-map {
+  width: 320px;
+  height: 457px;
+
   @include reset-indent;
   position: absolute;
+}
+
+.contacts__data {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__table-cell {

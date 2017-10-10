@@ -12,9 +12,27 @@ img {
 .button {
   @include reset-indent;
   border: none;
-  text-decoration: none;
   background: none;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+
+.button--left {
+  background: {
+    image: url("../img/icon-left-arrow.svg");
+    repeat: no-repeat;
+    position: 50%;
+  }
+}
+
+.button--right {
+  background: {
+    image: url("../img/icon-right-arrow.svg");
+    repeat: no-repeat;
+    position: 50%;
+  }
+}
+
 
 .visually-hidden {
   @include reset-indent;

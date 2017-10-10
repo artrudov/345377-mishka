@@ -8,7 +8,6 @@
 }
 
 .about__item {
-  padding-top: 45px;
   background-repeat: no-repeat;
 
   @include font-bold (17px, 400, normal, 20px, $header-color);
@@ -21,7 +20,8 @@
   &--flower::before {
     width: 32px;
     height: 37px;
-    margin-top: -50px;
+    margin-top: -53px;
+    margin-left: 8px;
     background: {
       image: url("../img/icon-feature-flower.svg");
       size: 32px 37px;
@@ -31,7 +31,7 @@
   &--price::before {
     width: 47px;
     height: 27px;
-    margin-top: -30px;
+    margin-top: -54px;
     background: {
       image: url("../img/icon-feature-money.svg");
       size: 47px 27px;
@@ -41,7 +41,8 @@
   &--heart::before {
     width: 33px;
     height: 27px;
-    margin-top: -30px;
+    margin-top: -49px;
+    margin-left: 7px;
     background: {
       image: url("../img/icon-feature-heart.svg");
       size: 33px 27px;
@@ -51,7 +52,8 @@
   &--ball::before {
     width: 34px;
     height: 34px;
-    margin-top: -30px;
+    margin-top: -50px;
+    margin-left: -6px;
     color: #63d1bb;
     background: {
       image: url("../img/icon-feature-ball.svg");
@@ -62,7 +64,8 @@
   &--domestic::before {
     width: 54px;
     height: 23px;
-    margin-top: -30px;
+    margin-top: -52px;
+    margin-left: 3px;
     background: {
       image: url("../img/icon-feature-rocket.svg");
       size: 54px 23px;
@@ -72,10 +75,41 @@
   &--gift::before {
     width: 33px;
     height: 33px;
-    margin-top: -35px;
+    margin-top: -53px;
+    margin-left: 5px;
     background: {
       image: url("../img/icon-feature-gift.svg");
       size: 33px 33px;
     }
+  }
+
+  &--flower {
+    padding-top: 86px;
+    width: 180px;
+  }
+
+  &--price {
+    padding-top: 84px;
+    width: 200px;
+  }
+
+  &--heart {
+    padding-top: 83px;
+    width: 180px;
+  }
+
+  &--ball {
+    padding-top: 82px;
+    width: 220px;
+  }
+
+  &--domestic {
+    padding-top: 83px;
+    width: 260px;
+  }
+
+  &--gift {
+    padding-top: 83px;
+    width: 220px;
   }
 }
