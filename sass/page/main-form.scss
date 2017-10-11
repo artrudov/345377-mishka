@@ -1,10 +1,104 @@
-.main-form__title {
-  @include font-bold (17px, 400, normal, 16px, #63d1bb);
-  text-transform: uppercase;
+.main-form {
+  padding: 0 30px;
 }
 
-.main-form__label {
+.main-form__title {
+  @include reset-indent;
+  position: relative;
+  @include font-bold (17px, 400, normal, 16px, #63d1bb);
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 198px;
+    height: 1px;
+    right: 0;
+    top: 0;
+    background-color: #63d1bb;
+  }
+
+  &--type {
+    padding: 12px 0 21px;
+    &::after {
+      top: 19px;
+    }
+  }
+
+  &--color {
+    padding: 33px 0 21px;
+    &::after {
+      top: 40px;
+    }
+  }
+
+  &--full-name {
+    padding: 14px 0 21px;
+    &::after {
+      top: 21px;
+    }
+  }
+
+  &--phone {
+    padding: 33px 0 21px;
+    &::after {
+      top: 40px;
+    }
+  }
+
+  &--mail {
+    padding: 33px 0 21px;
+    &::after {
+      top: 40px;
+    }
+  }
+
+  &--additional {
+    padding: 33px 0 21px;
+    &::after {
+      top: 40px;
+    }
+  }
+}
+
+input[type=checkbox],
+input[type=radio] {
+    display: none
+}
+
+.main-form__label--radio {
+  position: relative;
+  display: block;
+  padding: 12px 0 12px 62px;
   @include font-bold (17px, 400, normal, 18px, $header-color);
+}
+
+.main-form__label--radio::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  left: 0;
+  top: 3px;
+}
+
+.main-form__label--checkbox {
+  position: relative;
+  display: block;
+  padding: 14px 0 29px 63px;
+  @include font-bold (17px, 400, normal, 18px, $header-color);
+}
+
+.main-form__label--checkbox::before {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 35px;
+  border: 2px solid #444444;
+  left: 0;
+  top: 3px;
 }
 
 .main-form__input::-webkit-input-placeholder {
@@ -28,6 +122,8 @@
   opacity: 0.3;
   size: 25;
 }
+
+
 
 .main-form__attention {
   @include font-regular (14px, 400, normal, 16px, $content-color);

@@ -1,16 +1,16 @@
-.form-section {
-  @include main-padding (29px, 0, 57px, 0);
-}
-
 .form-section__header {
+  padding: 71px 0 75px;
   background-color: #f1f1f1;
 }
 
 .form-section__title {
-  @include main-padding (75px, 0, 81px, 0 );
+  @include reset-indent;
+
+  text-align: center;
   @include font-bold (27px, 400, normal, 30px, $header-color);
 }
 
 .form-section__description {
+  padding: 10px 30px 0;
   @include font-regular (13px, 400, normal, 24px, $content-color);
 }
