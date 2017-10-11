@@ -1,17 +1,23 @@
 .catalog-section__header {
+  @include reset-indent;
+  padding: 71px 0 75px;
+  text-align: center;
   background-color: #f1f1f1;
+
 }
 
 .catalog-section__title {
-  @include main-padding (75px, 0, 81px);
+  @include reset-indent;
   @include font-bold (27px, 400, normal, 30px, $header-color);
 }
 
 .catalog-section__list {
   @include reset-indent;
+  padding: 0 30px;
   list-style: none;
+  padding-bottom: 30px;
 }
 
 .catalog-section__item {
-  padding-top: 30px;
+  padding-top: 31px;
 }

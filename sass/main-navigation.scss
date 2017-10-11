@@ -52,20 +52,24 @@
 
 .main-navigation__link--cart {
   position: relative;
+
+  &::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 19px;
+    top: 31px;
+    left: 30px;
+    background: {
+      image: url("../img/icon-cart.svg");
+      size: 20px 19px;
+      repeat: no-repeat;
+    }
+  }
 }
 
 .main-navigation__link--cart::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 19px;
-  top: 31px;
-  left: 30px;
-  background: {
-    image: url("../img/icon-cart.svg");
-    size: 20px 19px;
-    repeat: no-repeat;
-  }
+
 }
 
 .main-navigation__button {
