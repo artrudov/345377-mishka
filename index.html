@@ -45,8 +45,9 @@
 
           <li class="main-navigation__item">
             <form class="main-navigation__form">
-              <input type="search" id="search-input" class="main-header__input" placeholder="Поиск:" />
+              <input type="search" id="search-input" class="main-navigation__input" placeholder="Поиск:" />
               <label for="search-input" class="main-navigation__label">
+                <span class="main-navigation__link">Поиск по сайту</span>
                 <svg class="main-navigation__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19">
                   <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
                 </svg>
@@ -157,14 +158,18 @@
           <h2  class="section-header__title section-header__title--contacts">Контакты</h2>
         </header>
         <address class="contacts__data">
-          <p class="contacts__table-cell">e-mail:</p>
-          <p class="contacts__table-cell">info@mimimishkashop.ru</p>
-          <p class="contacts__table-cell">адрес:</p>
-          <p class="contacts__table-cell">
-            г. Санкт-Петербург,  ул. Большая Конюшенная, д. 19/8, офис 101</p>
-        </address>
+          <div class="contacts__row">
+            <p class="contacts__info contacts__info--description">e-mail:</p>
+            <p class="contacts__info contacts__info--underline">info@mimimishkashop.ru</p>
+          </div>
+          <div class="contacts__row">
+            <p class="contacts__info contacts__info--description">адрес:</p>
+            <p class="contacts__info contacts__info--address">
+              г. Санкт-Петербург, ул. Большая Конюшенная, <br>д. 19/8, офис 101</p>
+          </div>
+          </address>
         <iframe class="contacts__frame-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615906916!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506514368287" frameborder="0" allowfullscreen></iframe>
-        <img src="img/map-mobile@1x.jpg" width="322" height="457" alt="Карта с указанием расположения организации" class="contacts__image" >
+        <img src="img/map-mobile@1x.jpg" alt="Карта с указанием расположения организации" class="contacts__image" >
         <footer class="contacts__footer">
           <a href="#" class="button contacts__button--link">Напишите нам</a>
         </footer>
@@ -205,7 +210,7 @@
       <header class="modal-cart__header">
         <h2  class="modal-cart__title">Добавить в корзину</h2>
       </header>
-      <p class="modal-cart__add-order">Выберите размер</p>
+      <p class="modal-cart__choice">Выберите размер</p>
       <ul class="modal-cart__size-list">
         <li class="modal-cart__size-item">S</li>
         <li class="modal-cart__size-item">M</li>

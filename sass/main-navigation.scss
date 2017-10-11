@@ -12,23 +12,46 @@
 }
 
 .main-navigation__list {
+  display: none;
+
   @include reset-indent;
   list-style: none;
+}
 
-  display: none;
+.main-navigation__item {
+  margin-top: -1px;
+  border-top: 1px solid #ececec;
 }
 
 .main-navigation__link {
   display: block;
+  padding: 30px 10px 30px 76px;
 
-  @include main-padding( 31px, 0, 33px, 0);
   @include font-bold (17px, 400, normal, 24px, $header-color);
   text-decoration: none;
-  border-top: 1px solid #ececec;
+
 
   &--logo {
     @include main-padding(20px, 0, 16px, 0);
   }
+}
+
+.main-navigation__form{
+  position: relative;
+}
+
+.main-navigation__input {
+  display: none;
+}
+
+.main-navigation__icon {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+}
+
+.main-navigation__link--cart {
+  position: relative;
 }
 
 .main-navigation__link--cart::before {
@@ -36,7 +59,8 @@
   content: "";
   width: 20px;
   height: 19px;
-  right: 0;
+  top: 31px;
+  left: 30px;
   background: {
     image: url("../img/icon-cart.svg");
     size: 20px 19px;

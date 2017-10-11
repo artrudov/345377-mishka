@@ -6,18 +6,25 @@
   @include main-padding (29px, 30px, 36px, 30px);
 }
 
+.main-footer__description {
+  @include reset-indent;
+  text-align: center;
+}
+
 .main-footer__link--copyright {
   position: relative;
+  margin-left: -58px;
 
   @include font-bold (19px, 400, normal, 18px, $header-color);
   text-decoration: none;
 
-  &::before {
+  &::after {
     content: "";
     position: absolute;
     width: 27px;
     height: 34px;
-    right: -40px;
+    right: -56px;
+    top: -1px;
 
     background: {
       image: url("../img/logo-htmlacademy.svg");

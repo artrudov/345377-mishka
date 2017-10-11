@@ -53,7 +53,7 @@
     width: 34px;
     height: 34px;
     margin-top: -50px;
-    margin-left: -6px;
+    margin-left: 4px;
     color: #63d1bb;
     background: {
       image: url("../img/icon-feature-ball.svg");
@@ -64,8 +64,8 @@
   &--domestic::before {
     width: 54px;
     height: 23px;
-    margin-top: -52px;
-    margin-left: 3px;
+    margin-top: -50px;
+    margin-left: -6px;
     background: {
       image: url("../img/icon-feature-rocket.svg");
       size: 54px 23px;
@@ -75,8 +75,8 @@
   &--gift::before {
     width: 33px;
     height: 33px;
-    margin-top: -53px;
-    margin-left: 5px;
+    margin-top: -52px;
+    margin-left: 3px;
     background: {
       image: url("../img/icon-feature-gift.svg");
       size: 33px 33px;

@@ -1,12 +1,13 @@
 .social-icons {
   @include reset-indent;
-  @include main-padding (24px, 30px, 27px, 30px);
+  padding: 24px 30px 27px 30px;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .social-icons__item {
-  display: inline-block;
-  vertical-align: top;
+
 }
 
 .social-icons__link {
@@ -17,7 +18,8 @@
   &--instagram {
     width: 21px;
     height: 21px;
-    margin-top: 3px;
+    margin-top: 6px;
+    margin-left: -9px;
     background: {
       image: url("../img/icon-insta.svg");
       size: 21px 21px;
@@ -27,6 +29,8 @@
   &--facebook {
     width: 15px;
     height: 28px;
+    margin-right: 37px;
+    margin-left: 43px;
     background: {
       image: url("../img/icon-fb.svg");
       size: 15px 28px;
@@ -36,7 +40,8 @@
   &--twitter {
     width: 24px;
     height: 20px;
-    margin-top: 3px;
+    margin-top: 6px;
+    margin-right: -2px;
     background: {
       image: url("../img/icon-twitter.svg");
       size: 24px 20px;
