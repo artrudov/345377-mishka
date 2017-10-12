@@ -36,8 +36,7 @@ img {
 
 
 .visually-hidden {
-  @include reset-indent;
-  font-size: 0;
+  display: none;
 }
 
 .section-header__title {

@@ -33,28 +33,28 @@
   }
 
   &--full-name {
-    padding: 14px 0 21px;
+    padding: 14px 0 6px;
     &::after {
       top: 21px;
     }
   }
 
   &--phone {
-    padding: 33px 0 21px;
+    padding: 32px 0 12px;
     &::after {
       top: 40px;
     }
   }
 
   &--mail {
-    padding: 33px 0 21px;
+    padding: 32px 0 12px;
     &::after {
       top: 40px;
     }
   }
 
   &--additional {
-    padding: 33px 0 21px;
+    padding: 32px 0 24px;
     &::after {
       top: 40px;
     }
@@ -66,11 +66,26 @@ input[type=radio] {
     display: none
 }
 
+.main-form__label {
+  @include font-bold (17px, 400, normal, 18px, $header-color);
+}
+
 .main-form__label--radio {
   position: relative;
   display: block;
   padding: 12px 0 12px 62px;
-  @include font-bold (17px, 400, normal, 18px, $header-color);
+}
+
+.main-form__label--checkbox {
+  position: relative;
+  display: block;
+  padding: 14px 0 29px 63px;
+}
+
+.main-form__label--text {
+  position: relative;
+  display: block;
+  padding: 22px 0 5px 0;
 }
 
 .main-form__label--radio::before {
@@ -84,13 +99,6 @@ input[type=radio] {
   top: 3px;
 }
 
-.main-form__label--checkbox {
-  position: relative;
-  display: block;
-  padding: 14px 0 29px 63px;
-  @include font-bold (17px, 400, normal, 18px, $header-color);
-}
-
 .main-form__label--checkbox::before {
   position: absolute;
   content: "";
@@ -102,34 +110,53 @@ input[type=radio] {
 }
 
 .main-form__input::-webkit-input-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $content-color);
+  @include font-regular (17px, 400, normal, 18px, $form-color);
 }
 
 .main-form__input::-moz-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $content-color);
+  @include font-regular (17px, 400, normal, 18px, $form-color);
 }
 
 .main-form__input:-moz-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $content-color);
+  @include font-regular (17px, 400, normal, 18px, $form-color);
 }
 
 .main-form__input:-ms-input-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $content-color);
+  @include font-regular (17px, 400, normal, 18px, $form-color);
 }
 
 .main-form__input {
-  @include font-regular (17px, 400, normal, 18px, $content-color);
-  opacity: 0.3;
-  size: 25;
+  display: block;
+  width: 100%;
+  padding: 10px 0 17px;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  @include font-regular (17px, 400, normal, 18px, $form-color);
+}
+
+.main-form__input--textarea {
+  min-height: 142px;
+  padding: 14px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
 }
 
 
-
 .main-form__attention {
+  @include reset-indent;
+  padding: 16px 0;
+
   @include font-regular (14px, 400, normal, 16px, $content-color);
 }
 
 .main-form__button {
-  @include font-bold (17px, 400, normal, 16px, $content-color);
-  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  padding: 14px 0;
+  margin: 15px 0 55px;
+  border: 2px solid #444444;
+
+  @include font-bold (17px, 400, normal, 20px, $content-color);
+  text-align: center;
 }
