@@ -2,12 +2,10 @@
   background-color: #f1f1f1;
 }
 
-
 .main-header__description {
-  min-height: 282px;
-
   @include reset-indent;
-  @include main-padding(0, 30px);
+  min-height: 282px;
+  padding: 0 30px;
   text-align: center;
   background-color: #fbfbfb;
 }
