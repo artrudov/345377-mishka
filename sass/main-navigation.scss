@@ -19,6 +19,14 @@
     border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
   }
+
+  &--mobile {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
 }
 
 .main-navigation__link {
@@ -88,7 +96,7 @@
 
 @media (min-width: $tablet-width) {
   .main-navigation {
-    width: 768px;
+    min-width: 768px;
     margin: 0 auto;
     background-color: #f1f1f1;
   }
@@ -101,9 +109,10 @@
   }
 
   .main-navigation__item {
+    display: block;
     padding: 0;
-    border: none;
     margin: 0;
+    border: none;
     box-sizing: border-box;
 
     &--logo {
@@ -135,7 +144,6 @@
     }
 
     &--delivery {
-      display: block;
       margin-left: auto;
       padding: 0;
       padding-top: 17px;
@@ -145,6 +153,9 @@
       order: 5;
     }
 
+    &--desktop {
+      display: none;
+    }
   }
 
   .main-navigation__link {
@@ -152,10 +163,6 @@
     padding: 0;
     padding-top: 32px;
     padding-bottom: 15px;
-
-    &--logo {
-
-    }
 
     &--indent {
       padding: 17px 37px 0 49px;
@@ -190,5 +197,79 @@
   .main-navigation__button {
     display: none;
   }
+}
 
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    width: 1150px;
+    padding: 0 50px;
+  }
+
+  .main-navigation__list {
+    justify-content: space-between;
+  }
+
+  .main-navigation__item {
+    display: block;
+    flex-grow: 1;
+    padding: 0;
+
+    &--logo {
+      order: 2;
+    }
+
+    &--bases {
+      order: 1;
+    }
+
+    &--form {
+      order: 3;
+    }
+
+    &--cart {
+      order: 4;
+    }
+
+    &--delivery {
+      display: block;
+      order: 6;
+    }
+
+    &--tablet {
+      background-color: #ffffff;
+    }
+
+    &--desktop {
+      display: block;
+      order: 5;
+    }
+  }
+
+  .main-navigation__link {
+    padding: 0;
+    padding-top: 17px;
+    font-size: 17px;
+
+    &--indent {
+      padding: 17px;
+    }
+
+    &--bases {
+      padding-top: 17px;
+    }
+
+    &--search {
+      font-size: 0;
+    }
+
+    &--cart {
+
+
+      &::before {
+        top: 34px;
+        left: 32px;
+        opacity: 0.3;
+      }
+    }
+  }
 }
