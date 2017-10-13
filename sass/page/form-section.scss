@@ -14,3 +14,19 @@
   padding: 10px 30px 0;
   @include font-regular (13px, 400, normal, 24px, $content-color);
 }
+
+@media (min-width: $tablet-width) {
+  .form-section__header {
+    padding: 46px 0 92px;
+  }
+
+  .form-section__title {
+    font-size: 43px;
+  }
+
+  .form-section__description {
+    padding: 56px 50px 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

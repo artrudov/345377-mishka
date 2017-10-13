@@ -90,36 +90,32 @@
   .main-navigation {
     width: 768px;
     margin: 0 auto;
+    background-color: #f1f1f1;
   }
 
   .main-navigation__list {
     display: flex;
-
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding: 0;
-
   }
 
   .main-navigation__item {
     padding: 0;
     border: none;
     margin: 0;
+    box-sizing: border-box;
 
     &--logo {
-      width: 267px;
-      padding-left: 50px;
+      width: 369px;
+      padding-left: 48px;
       text-align: left;
       order: 1;
       border-bottom: 1px solid #dfdfdf;
+      background-color: #ffffff;
     }
 
     &--bases {
-      padding-left: 50px;
-      border-top: 1px solid #dfdfdf;
-      margin-top: -1px;
-      background-color: #f1f1f1;
       order: 4;
     }
 
@@ -127,22 +123,23 @@
       width: 84px;
       border: 1px solid #dfdfdf;
       border-top: none;
+      background-color: #ffffff;
       order: 2;
     }
 
     &--cart {
-      width: 265px;
-      padding-right: 50px;
+      width: 314px;
+      border-bottom: 1px solid #dfdfdf;
+      background-color: #ffffff;
       order: 3;
     }
 
     &--delivery {
-      width: 384px;
       display: block;
+      margin-left: auto;
       padding: 0;
-      padding-top: 30px;
-      margin-top: -1px;
-      background-color: #f1f1f1;
+      padding-top: 17px;
+      padding-right: 50px;
 
       @include font-regular (15px, 400, normal, 24px, $content-color);
       order: 5;
@@ -153,14 +150,19 @@
   .main-navigation__link {
     font-size: 15px;
     padding: 0;
-    padding-top: 30px;
+    padding-top: 32px;
+    padding-bottom: 15px;
 
     &--logo {
 
     }
 
-    &--bases {
+    &--indent {
+      padding: 17px 37px 0 49px;
+    }
 
+    &--bases {
+      padding-top: 17px;
     }
 
     &--search {
@@ -168,13 +170,21 @@
     }
 
     &--cart {
-      padding-left: 97px;
+      padding-left: 83px;
+      font-size: 17px;
+
+      &::before {
+        top: 34px;
+        left: 32px;
+        opacity: 0.3;
+      }
     }
   }
 
   .main-navigation__icon {
-    top: 19px;
-    left: -10px;
+    top: 36px;
+    left: 33px;
+    opacity: 0.3;
   }
 
   .main-navigation__button {
