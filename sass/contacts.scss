@@ -2,12 +2,22 @@
   @include main-padding (42px, 0, 39px, 0);
 }
 
-.contacts .section-header {
+.contacts__header {
   padding: 0 30px;
 }
 
+.contacts__title {
+  @include reset-indent;
+  margin-left: -1px;
+  @include font-bold (18px, 400, normal, 30px, #000000);
+}
+
+.contacts__map {
+  position: relative;
+}
+
 .contacts__frame-map {
-  width: 320px;
+  width: 100%;
   height: 457px;
 
   @include reset-indent;
@@ -23,10 +33,9 @@
   flex-direction: row;
   flex-wrap: nowrap;
 
-  &:first-child {
+  &--first{
     padding-bottom: 29px;
   }
-
 }
 
 .contacts__info {
@@ -62,4 +71,94 @@
   text-decoration: none;
 
   @include font-bold (18px, 400, normal, 20px, $content-color);
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    padding: 50px 0;
+  }
+
+  .contacts__header {
+    padding: 0 50px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    padding-top: 104px;
+    padding-bottom: 40px;
+    margin-left: -5px;
+    background: {
+      image: url("../img/icon-flag.svg");
+      repeat: no-repeat;
+      position: right 77px;
+      size: 52px 85px;
+    }
+  }
+
+  .contacts__data {
+    display: flex;
+    padding: 18px 50px 27px;
+    align-items: baseline;
+  }
+
+  .contacts__row {
+    flex-basis: 50%;
+
+    &--first {
+      margin-right: auto;
+    }
+  }
+
+  .contacts__info {
+    font-size: 17px;
+    line-height: 30px;
+
+    &--address {
+      width: 240px;
+      padding-bottom: 29px;
+    }
+  }
+
+  .contacts__footer{
+    padding-top: 15px;
+    padding-bottom: 8px;
+    width: 230px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    max-width: 1250px;
+    padding: 0 100px 0 275px;
+  }
+
+  .contacts__header {
+    padding: 0;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    background-position: left;
+  }
+
+  .contacts__map {
+    width: 528px;
+    margin-top: -320px;
+    float: right;
+  }
+
+  .contacts__data {
+    display: block;
+    padding: 0;
+  }
+
+  .contacts__footer {
+    padding: 30px 0 80px;
+    width: auto;
+  }
+
+  .contacts__button--link {
+    width: 230px;
+  }
 }

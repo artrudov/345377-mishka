@@ -1,6 +1,5 @@
 .feedback {
   padding: 26px 30px 44px 30px;
-  width: 260px;
 
   @include background-wave;
 }
@@ -59,18 +58,87 @@
 }
 
 @media (min-width: $tablet-width) {
-  .feedback__title {
-    width: 100%;
-    font-size: 43px;
-  }
-
-  .feedback__container {
+  .feedback {
+    padding: 50px 50px 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    background: {
+      image: url("../img/review@1x.jpg");
+      size: 350px 100%;
+      repeat: no-repeat;
+      position: left;
+    }
+
+    &__title {
+      width: 50%;
+      margin-top: 36px;
+      margin-bottom: 39px;
+      margin-left: -4px;
+      font-size: 43px;
+      order: 1;
+    }
+
+    &__text {
+      padding-bottom: 60px;
+      font-size: 17px;
+      line-height: 30px;
+      order: 3;
+    }
+
+    &__autor-name {
+      padding: 0;
+      width: 50%;
+      padding-bottom: 4px;
+      font-size: 18px;
+      order: 4;
+    }
+
+    &__autor-contact {
+      padding: 0;
+      font-size: 17px;
+      order: 5;
+    }
+
+    &__control-block {
+      flex-basis: 175px;
+      padding-bottom: 52px;
+      margin-left: auto;
+      margin-top: 3px;
+      margin-right: 4px;
+      order: 6;
+    }
+
+    &__control-link {
+      margin-left: auto;
+      flex-basis: 175px;
+      margin-top: 12px;
+      align-self: center;
+      order: 2;
+    }
   }
 
-  .feedback__article {
-    width: 50%;
+  .feedback__control-button {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    max-width: 1250px;
+    padding: 50px 100px 50px 275px;
+    background-position: 100px 0;
+  }
+
+  .feedback__title {
+    font-size: 53px;
+  }
+
+  .feedback__text {
+    width: 800px;
+    padding-bottom: 42px;
+  }
+
+  .feedback__autor-name {
+    font-size: 17px;
   }
 }

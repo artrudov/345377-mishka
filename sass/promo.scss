@@ -137,3 +137,28 @@
     width: 292px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    max-width: 1250px;
+    padding: 142px 100px 0;
+  }
+
+  .promo__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-bottom: 29px;
+  }
+
+  .promo__title {
+    font-size: 53px;
+  }
+
+  .promo__hot-offer {
+    padding: 0 52px 0 49px;
+  }
+
+  .promo__container {
+    margin-left: 175px;
+  }
+}

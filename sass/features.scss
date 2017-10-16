@@ -72,3 +72,26 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    max-width: 1250px;
+    padding: 0 100px;
+  }
+
+  .features__list {
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .features__link {
+
+    &--interior {
+      padding: 28px 0 58px 36px;
+    }
+
+    &--toys {
+      padding: 28px 0 58px 36px;
+    }
+  }
+}

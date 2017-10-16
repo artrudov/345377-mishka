@@ -42,8 +42,4 @@ img {
   @include reset-indent;
   margin-left: -1px;
   @include font-bold (25px, 400, normal, 30px, #000000);
-
-  &--contacts {
-    font-size: 18px;
-  }
 }
