@@ -16,8 +16,13 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-section {
+      margin-top: -57px;
+      border-top: 1px solid #dfdfdf;
+  }
+
   .form-section__header {
-    padding: 46px 0 92px;
+    padding: 103px 0 92px;
   }
 
   .form-section__title {
@@ -28,5 +33,11 @@
     padding: 56px 50px 0;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-section {
+      margin-top: -42px;
   }
 }

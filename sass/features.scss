@@ -1,12 +1,17 @@
 .features {
-  width: 320px;
-
   @include reset-indent;
 }
 
 .features__list {
   @include reset-indent;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.features__item {
+
 }
 
 .features__link {
@@ -25,7 +30,7 @@
     image: url("../img/icon-interior.svg");
     repeat: no-repeat;
     size: 40px 60px;
-    position: 244px 23px;
+    position: 87% 65%;
   }
 }
 
@@ -38,5 +43,32 @@
     repeat: no-repeat;
     size: 60px 60px;
     position: 233px 23px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    padding: 0 50px;
+    flex-direction: row;
+  }
+
+  .features__item {
+    flex-basis: 50%;
+  }
+
+  .features__link {
+    width: 100%;
+
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--interior {
+      padding: 28px 80px 20px 36px;
+    }
+
+    &--toys {
+      padding: 28px 120px 20px 36px;
+    }
   }
 }
