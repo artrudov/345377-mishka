@@ -1,5 +1,7 @@
 .feedback {
+  max-width: 1050px;
   padding: 26px 30px 44px 30px;
+  margin: 0 auto;
 
   @include background-wave;
 }
@@ -26,9 +28,10 @@
 
 .feedback__autor-contact {
   @include reset-indent;
-
+  display: block;
   padding-top: 2px;
   padding-bottom: 28px;
+
   @include font-regular (17px, 400, normal, 30px, $content-color);
 }
 
@@ -79,7 +82,7 @@
     }
 
     &__text {
-      padding-bottom: 60px;
+      padding-bottom: 56px;
       font-size: 17px;
       line-height: 30px;
       order: 3;
@@ -88,30 +91,29 @@
     &__autor-name {
       padding: 0;
       width: 50%;
-      padding-bottom: 4px;
       font-size: 18px;
       order: 4;
     }
 
     &__autor-contact {
       padding: 0;
+      padding-top: 3px;
       font-size: 17px;
       order: 5;
     }
 
     &__control-block {
       flex-basis: 175px;
+      margin-top: 3px;
       padding-bottom: 52px;
       margin-left: auto;
-      margin-top: 3px;
-      margin-right: 4px;
       order: 6;
     }
 
     &__control-link {
       margin-left: auto;
       flex-basis: 175px;
-      margin-top: 12px;
+      margin-top: 8px;
       align-self: center;
       order: 2;
     }
@@ -124,21 +126,24 @@
 
 @media (min-width: $desktop-width) {
   .feedback {
-    max-width: 1250px;
-    padding: 50px 100px 50px 275px;
+    padding: 52px 100px 46px 100px;
     background-position: 100px 0;
   }
 
   .feedback__title {
+    margin-top: 38px;
+    margin-left: 175px;
     font-size: 53px;
   }
 
   .feedback__text {
     width: 800px;
-    padding-bottom: 42px;
+    margin-left: 175px;
+    padding-bottom: 39px;
   }
 
   .feedback__autor-name {
     font-size: 17px;
+    margin-left: 175px;
   }
 }

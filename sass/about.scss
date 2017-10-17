@@ -1,5 +1,7 @@
 .about {
+  max-width: 1050px;
   padding: 34px 30px 30px;
+  margin: 0 auto;
 }
 
 .about__title {
@@ -164,12 +166,12 @@
     }
 
     &--domestic {
-      padding-top: 110px;
+      padding-top: 111px;
       width: 300px;
     }
 
     &--gift {
-      padding-top: 110px;
+      padding-top: 112px;
       width: 260px;
     }
   }
@@ -177,11 +179,16 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    max-width: 1250px;
-    padding: 146px 275px 94px;
+    padding: 72px 0 86px;
   }
 
   .about__title {
+    padding-bottom: 32px;
+    padding-left: 172px;
     font-size: 53px;
+  }
+
+  .about__container {
+    padding: 0 175px;
   }
 }

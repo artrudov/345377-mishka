@@ -1,8 +1,13 @@
 .main-footer {
+  background-color: #f1f1f1;
+}
+
+.main-footer__container{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-color: #f1f1f1;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .main-footer__logo {
@@ -49,6 +54,9 @@
 @media (min-width: $tablet-width) {
   .main-footer {
     padding: 52px 50px;
+  }
+
+  .main-footer__container {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -69,15 +77,21 @@
     @include reset-indent;
   }
 
-  .main-footer__link {
-
-  }
-
   .main-footer__link--copyright {
     padding-right: 55px;
 
     &::after {
       right: 0px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+
+  }
+
+  .main-header__contaoner {
+    padding: 52px 100px 50px;
   }
 }

@@ -1,5 +1,7 @@
 .contacts {
-  @include main-padding (42px, 0, 39px, 0);
+  padding: 42px 0 39px 0;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
 .contacts__header {
@@ -83,15 +85,24 @@
   }
 
   .contacts__title {
+    position: relative;
     font-size: 43px;
     padding-top: 104px;
     padding-bottom: 40px;
     margin-left: -5px;
-    background: {
-      image: url("../img/icon-flag.svg");
-      repeat: no-repeat;
-      position: right 77px;
-      size: 52px 85px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 52px;
+      height: 85px;
+      top: 78px;
+      right: 0;
+      background: {
+        image: url("../img/icon-flag.svg");
+        repeat: no-repeat;
+        size: 52px 85px;
+      }
     }
   }
 
@@ -129,8 +140,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    max-width: 1250px;
-    padding: 0 100px 0 275px;
+    padding: 143px 100px 25px 100px;
   }
 
   .contacts__header {
@@ -138,8 +148,14 @@
   }
 
   .contacts__title {
+    padding-bottom: 62px;
+    padding-left: 175px;
     font-size: 53px;
-    background-position: left;
+
+    &::before{
+      right: auto;
+      left: 65px;
+    }
   }
 
   .contacts__map {
@@ -151,6 +167,11 @@
   .contacts__data {
     display: block;
     padding: 0;
+    padding-left: 175px;
+  }
+
+  .contacts__info--address {
+    padding-bottom: 10px;
   }
 
   .contacts__footer {
@@ -159,6 +180,7 @@
   }
 
   .contacts__button--link {
+    margin-left: 175px;
     width: 230px;
   }
 }
