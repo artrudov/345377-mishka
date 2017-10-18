@@ -1,5 +1,6 @@
 .promo {
   padding: 27px 30px 35px;
+
   @include background-wave;
   @include font-regular (15px, 400, normal, 24px, $content-color);
   max-width: 1050px;
@@ -14,6 +15,7 @@
 .promo__title {
   @include reset-indent;
   margin-left: -1px;
+
   @include font-bold (25px, 400, normal, 30px, #000000);
 
   &--contacts {
@@ -24,6 +26,7 @@
 .promo__hot-offer {
   @include reset-indent;
   padding-top: 5px;
+
   @include font-bold (17px, 400, normal, 20px, $hot-color);
   text-transform: uppercase;
 }
@@ -32,6 +35,7 @@
   @include reset-indent;
   padding-top: 24px;
   padding-bottom: 18px;
+
   @include font-regular (15px, 400, normal, 24px, $content-color);
 }
 
@@ -57,6 +61,7 @@
   @include reset-indent;
   padding-top: 19px;
   padding-bottom: 25px;
+
   @include font-bold (17px, 400, normal, 24px, $content-color);
   text-align: center;
 }
@@ -65,20 +70,12 @@
   display: block;
   padding: 14px 0;
   border: 2px solid #444444;
+
   @include font-bold (17px, 400, normal, 20px, $content-color);
   text-align: center;
   text-decoration: none;
 }
 
-.promo__title {
-  @include reset-indent;
-  margin-left: -1px;
-  @include font-bold (25px, 400, normal, 30px, #000000);
-
-  &--contacts {
-    font-size: 18px;
-  }
-}
 @media (min-width: $tablet-width) {
   .promo {
     padding: 65px 50px 0;
@@ -132,6 +129,7 @@
     width: 292px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .promo {
     padding: 142px 100px 0;

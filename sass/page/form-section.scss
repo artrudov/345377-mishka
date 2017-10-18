@@ -6,6 +6,7 @@
 .form-section__title {
   @include reset-indent;
   text-align: center;
+
   @include font-bold (27px, 400, normal, 30px, $header-color);
 }
 
@@ -13,8 +14,10 @@
   max-width: 700px;
   margin: 0 auto;
   padding: 10px 30px 0;
+
   @include font-regular (13px, 400, normal, 24px, $content-color);
 }
+
 @media (min-width: $tablet-width) {
   .form-section {
     margin-top: -57px;
@@ -35,6 +38,7 @@
     line-height: 30px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .form-section {
     margin-top: -42px;
