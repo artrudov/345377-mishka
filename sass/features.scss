@@ -9,16 +9,10 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-
-}
-
-.features__item {
-
 }
 
 .features__link {
   display: block;
-
 
   @include font-bold (19px, 400, normal, 24px, $additional-color);
   text-decoration: none;

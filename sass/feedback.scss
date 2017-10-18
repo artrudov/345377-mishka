@@ -7,22 +7,23 @@
 }
 
 .feedback__title {
-    @include reset-indent;
-    margin-left: -1px;
-    @include font-bold (25px, 400, normal, 30px, #000000);
+  @include reset-indent;
+  margin-left: -1px;
+
+  @include font-bold (25px, 400, normal, 30px, #000000);
 }
 
 .feedback__text {
   @include reset-indent;
-
   padding-top: 23px;
+
   @include font-regular (15px, 400, normal, 30px, $content-color);
 }
 
 .feedback__autor-name {
   @include reset-indent;
-
   padding-top: 28px;
+
   @include font-bold (17px, 400, normal, 24px, $header-color);
 }
 

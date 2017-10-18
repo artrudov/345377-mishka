@@ -2,7 +2,7 @@
   background-color: #f1f1f1;
 }
 
-.main-footer__container{
+.main-footer__container {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -81,16 +81,12 @@
     padding-right: 55px;
 
     &::after {
-      right: 0px;
+      right: 0;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-footer {
-
-  }
-
   .main-header__contaoner {
     padding: 52px 100px 50px;
   }

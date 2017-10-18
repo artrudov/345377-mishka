@@ -2,6 +2,7 @@
   @include reset-indent;
   background-color: #ffffff;
 }
+
 .main-navigation__list {
   @include reset-indent;
   display: flex;
@@ -24,6 +25,7 @@
 
 .main-navigation__link {
   display: block;
+
   @include font-bold (17px, 400, normal, 24px, $header-color);
   text-decoration: none;
 
@@ -51,7 +53,7 @@
     padding: 27px 0 28px;
     position: relative;
 
-    &::before{
+    &::before {
       position: absolute;
       content: "";
       width: 21px;
@@ -167,10 +169,6 @@
     padding-bottom: 15px;
     margin-left: 0;
 
-    &--logo {
-
-    }
-
     &--catalog {
       padding-top: 20px;
     }
@@ -205,9 +203,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-navigation {
-  }
-
   .main-navigation__list {
     max-width: 1250px;
     margin: 0 auto;
@@ -272,9 +267,6 @@
   .main-navigation__link {
     padding: 0;
 
-    &--logo {
-    }
-
     &--catalog {
       padding-top: 30px;
       padding-bottom: 34px;
@@ -300,13 +292,6 @@
         left: 71px;
         opacity: 0.3;
       }
-    }
-
-    &--new {
-    }
-
-    &--sales {
-
     }
   }
 
