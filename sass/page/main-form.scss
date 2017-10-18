@@ -20,6 +20,7 @@
 
   &--type {
     padding: 12px 0 21px;
+
     &::after {
       top: 19px;
     }
@@ -27,6 +28,7 @@
 
   &--color {
     padding: 33px 0 21px;
+
     &::after {
       top: 40px;
     }
@@ -34,6 +36,7 @@
 
   &--full-name {
     padding: 14px 0 6px;
+
     &::after {
       top: 21px;
     }
@@ -41,6 +44,7 @@
 
   &--phone {
     padding: 32px 0 12px;
+
     &::after {
       top: 40px;
     }
@@ -48,6 +52,7 @@
 
   &--mail {
     padding: 32px 0 12px;
+
     &::after {
       top: 40px;
     }
@@ -55,6 +60,7 @@
 
   &--additional {
     padding: 32px 0 24px;
+
     &::after {
       top: 40px;
     }
@@ -63,7 +69,7 @@
 
 input[type=checkbox],
 input[type=radio] {
-    display: none
+  display: none;
 }
 
 .main-form__label {
@@ -85,7 +91,7 @@ input[type=radio] {
 .main-form__label--text {
   position: relative;
   display: block;
-  padding: 22px 0 5px 0;
+  padding: 22px 0 5px;
 }
 
 .main-form__label--radio::before {
@@ -131,7 +137,6 @@ input[type=radio] {
   padding: 10px 0 17px;
   border: none;
   border-bottom: 2px solid #000000;
-
   @include font-regular (17px, 400, normal, 18px, $form-color);
 
   &--phone {
@@ -158,11 +163,9 @@ input[type=radio] {
   box-sizing: border-box;
 }
 
-
 .main-form__attention {
   @include reset-indent;
   padding: 16px 0;
-
   @include font-regular (14px, 400, normal, 16px, $content-color);
 }
 
@@ -172,11 +175,9 @@ input[type=radio] {
   padding: 15px 0 14px;
   margin: 15px 0 55px;
   border: 2px solid #444444;
-
   @include font-bold (17px, 400, normal, 20px, $content-color);
   text-align: center;
 }
-
 @media (min-width: $tablet-width) {
   .main-form {
     padding: 0;
@@ -237,7 +238,6 @@ input[type=radio] {
 
   .main-form__column {
     @include reset-indent;
-
     padding-top: 17px;
     display: flex;
     flex-direction: column;
@@ -251,11 +251,9 @@ input[type=radio] {
 
   .main-form__row {
     @include reset-indent;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     flex-grow: 1;
 
     &--color {
@@ -308,7 +306,7 @@ input[type=radio] {
     padding: 0;
     font-size: 19px;
 
-    &--radio{
+    &--radio {
       padding-left: 79px;
       padding-bottom: 58px;
 
@@ -358,20 +356,16 @@ input[type=radio] {
   .main-form__input {
     flex-basis: 370px;
     flex-grow: 1;
-    padding: 0;
-    padding-top: 6px;
-    padding-left: 15px;
-    padding-bottom: 13px;
+    padding: 6px 0 13px 15px;
     margin-bottom: auto;
     box-sizing: border-box;
-
     font-size: 19px;
 
     &::-webkit-input-placeholder {
       font-size: 19px;
     }
 
-    &::-moz-placeholder  {
+    &::-moz-placeholder {
       font-size: 19px;
     }
 
@@ -426,17 +420,15 @@ input[type=radio] {
     font-size: 17px;
   }
 }
-
 @media (min-width: $desktop-width) {
   .main-form__block {
-
     &--type {
       padding-top: 37px;
       padding-bottom: 9px;
     }
 
     &--color {
-      padding-top: 62px
+      padding-top: 62px;
     }
 
     &--full-name {
@@ -456,7 +448,6 @@ input[type=radio] {
   }
 
   .main-form__container {
-
     &--phone {
       box-sizing: border-box;
       padding-right: 175px;
@@ -477,9 +468,8 @@ input[type=radio] {
   }
 
   .main-form__row {
-
     &--color {
-    justify-content: flex-start;
+      justify-content: flex-start;
     }
 
     &--footer {
@@ -487,8 +477,6 @@ input[type=radio] {
       padding: 0 175px;
     }
   }
-
-
 
   .main-form__title {
     flex-basis: 175px;

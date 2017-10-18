@@ -13,7 +13,6 @@
 
 .features__link {
   display: block;
-
   @include font-bold (19px, 400, normal, 24px, $additional-color);
   text-decoration: none;
 }
@@ -32,7 +31,6 @@
     right: 36px;
     opacity: 0.2;
     background: {
-
       image: url("../img/icon-interior.svg");
       repeat: no-repeat;
       size: 40px 60px;
@@ -65,7 +63,6 @@
   display: inline-block;
   width: 160px;
 }
-
 @media (min-width: $tablet-width) {
   .features__list {
     padding: 0 50px;
@@ -78,7 +75,6 @@
 
   .features__link {
     width: 100%;
-
     box-sizing: border-box;
     font-size: 20px;
     line-height: 30px;
@@ -94,18 +90,15 @@
     &--toys {
       padding: 28px 0 20px 36px;
 
-      &::before{
+      &::before {
         top: 31px;
         right: 34px;
       }
     }
   }
 }
-
 @media (min-width: $desktop-width) {
-  .features {
-
-  }
+  .features {}
 
   .features__list {
     padding: 0;
@@ -113,7 +106,6 @@
   }
 
   .features__link {
-
     &--interior {
       padding: 28px 0 24px 36px;
     }

@@ -16,7 +16,6 @@
   position: relative;
   width: 80px;
   padding: 24px 0;
-
   @include font-bold (17px, 400, normal, 24px, $header-color);
 
   &::before {
@@ -26,7 +25,6 @@
     height: 32px;
     top: 29px;
     left: -56px;
-
     background: {
       image: url("../img/icon-video.svg");
       size: 32px 32px;
@@ -38,7 +36,6 @@
 .manufacturing-procces__description {
   @include reset-indent;
   padding: 28px 33px 25px;
-
   @include font-regular (13px, 400, normal, 24px, $content-color);
 }
 
@@ -47,11 +44,9 @@
   padding: 14px 24px;
   margin-bottom: 32px;
   border: 2px solid #444444;
-
   @include font-bold (17px, 400, normal, 20px, $content-color);
   text-align: center;
 }
-
 @media (min-width: $tablet-width) {
   .manufacturing-procces {
     padding: 0 50px 61px;
@@ -92,10 +87,9 @@
     order: 4;
   }
 }
-
 @media (min-width: $desktop-width) {
   .manufacturing-procces {
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 102px;
   }
 

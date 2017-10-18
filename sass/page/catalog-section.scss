@@ -20,11 +20,10 @@
 .catalog-section__item {
   padding-top: 31px;
 }
-
 @media (min-width: $tablet-width) {
   .catalog-section {
-      margin-top: -57px;
-      border-top: 1px solid #dfdfdf;
+    margin-top: -57px;
+    border-top: 1px solid #dfdfdf;
   }
 
   .catalog-section__title {
@@ -44,11 +43,10 @@
     }
   }
 }
-
 @media (min-width: $desktop-width) {
   .catalog-section {
-      margin-top: -42px;
-      border-top: 1px solid #dfdfdf;
+    margin-top: -42px;
+    border-top: 1px solid #dfdfdf;
   }
 
   .catalog-section__title {
