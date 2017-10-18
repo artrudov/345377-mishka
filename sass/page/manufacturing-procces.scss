@@ -1,5 +1,10 @@
 .manufacturing-procces {
-  margin: 0 30px 58px;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 30px 60px;
+}
+
+.manufacturing-procces__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,24 +54,82 @@
 
 @media (min-width: $tablet-width) {
   .manufacturing-procces {
-    flex-direction: column;
-    flex-wrap: wrap;
+    padding: 0 50px 61px;
+  }
+
+  .manufacturing-procces__container {
+    align-items: stretch;
+    padding-bottom: 45px;
   }
 
   .manufacturing-procces__title {
+    width: auto;
+    padding: 39px 10px 0 105px;
+    font-size: 20px;
     order: 2;
+
+    &::before {
+      top: 34px;
+      left: 40px;
+    }
   }
 
   .manufacturing-procces__image {
+    height: 454px;
     order: 1;
-    width: 100%;
   }
 
   .manufacturing-procces__description {
+    padding: 32px 45px 35px 38px;
+    font-size: 15px;
+    line-height: 30px;
     order: 3;
   }
 
   .manufacturing-procces__link {
+    width: 583px;
+    margin: 0 auto;
     order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .manufacturing-procces {
+    padding-top: 0px;
+    padding-bottom: 102px;
+  }
+
+  .manufacturing-procces__container {
+    display: block;
+    min-height: 457px;
+    padding: 0;
+  }
+
+  .manufacturing-procces__title {
+    width: 230px;
+    margin-left: 655px;
+    padding-top: 97px;
+
+    &::before {
+      top: 42px;
+      left: 107px;
+    }
+  }
+
+  .manufacturing-procces__image {
+    float: left;
+    margin-top: -144px;
+    width: 682px;
+  }
+
+  .manufacturing-procces__description {
+    width: 230px;
+    margin-left: 720px;
+    padding-bottom: 46px;
+  }
+
+  .manufacturing-procces__link {
+    margin-left: 760px;
+    width: 230px;
   }
 }
