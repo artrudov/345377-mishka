@@ -139,7 +139,14 @@ input[type=radio] {
       image: url("../img/icon-phone.svg");
       repeat: no-repeat;
       position: 99% 5px;
+    }
+  }
 
+  &--mail {
+    background: {
+      image: url("../img/icon-mail.svg");
+      repeat: no-repeat;
+      position: 99% 5px;
     }
   }
 }
