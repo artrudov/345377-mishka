@@ -21,6 +21,7 @@
 @media (min-width: $tablet-width) {
   .main-header__content {
     margin-top: -57px;
+    padding-top: 57px;
     border-top: 1px solid #e7e7e7;
   }
 
@@ -40,6 +41,7 @@
 @media (min-width: $desktop-width) {
   .main-header__content {
     margin-top: -42px;
+    padding-top: 42px;
     border-top: 1px solid #e7e7e7;
   }
 

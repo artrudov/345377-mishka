@@ -133,6 +133,15 @@ input[type=radio] {
   border-bottom: 2px solid #000000;
 
   @include font-regular (17px, 400, normal, 18px, $form-color);
+
+  &--phone {
+    background: {
+      image: url("../img/icon-phone.svg");
+      repeat: no-repeat;
+      position: 99% 5px;
+
+    }
+  }
 }
 
 .main-form__input--additional {
