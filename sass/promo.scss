@@ -1,19 +1,166 @@
 .promo {
-  @include main-padding (0, 0, 42px, 0);
+  padding: 27px 30px 35px;
+
   @include background-wave;
   @include font-regular (15px, 400, normal, 24px, $content-color);
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.promo__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__title {
+  @include reset-indent;
+  margin-left: -1px;
+
+  @include font-bold (25px, 400, normal, 30px, #000000);
+
+  &--contacts {
+    font-size: 18px;
+  }
 }
 
 .promo__hot-offer {
-  @include font-bold (17px, 400, normal, 20px, #63d1bb);
+  @include reset-indent;
+  padding-top: 5px;
+
+  @include font-bold (17px, 400, normal, 20px, $hot-color);
   text-transform: uppercase;
 }
 
+.promo__description {
+  @include reset-indent;
+  padding-top: 24px;
+  padding-bottom: 18px;
+
+  @include font-regular (15px, 400, normal, 24px, $content-color);
+}
+
+.promo__table-raw {
+  border-bottom: 1px solid #ececec;
+}
+
+.promo__table-cell {
+  padding-top: 7px;
+  padding-bottom: 8px;
+  vertical-align: middle;
+}
+
+.promo__table-cell:first-child {
+  width: 98px;
+}
+
+.promo__image {
+  padding-top: 27px;
+}
+
 .promo__price {
+  @include reset-indent;
+  padding-top: 19px;
+  padding-bottom: 25px;
+
   @include font-bold (17px, 400, normal, 24px, $content-color);
+  text-align: center;
 }
 
 .promo__button {
+  display: block;
+  padding: 14px 0;
+  border: 2px solid #444444;
+
   @include font-bold (17px, 400, normal, 20px, $content-color);
+  text-align: center;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    padding: 65px 50px 0;
+  }
+
+  .promo__header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 29px;
+    margin-left: -2px;
+  }
+
+  .promo__title {
+    font-size: 43px;
+  }
+
+  .promo__hot-offer {
+    width: 70px;
+    padding: 3px 29px 0 0;
+    text-align: center;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .promo__container {
+    width: 300px;
+    padding-bottom: 50px;
+  }
+
+  .promo__description {
+    padding-bottom: 35px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__image {
+    float: right;
+    margin-top: -175px;
+    margin-right: -367px;
+  }
+
+  .promo__price {
+    margin-left: -11px;
+    padding-top: 56px;
+    padding-bottom: 35px;
+    font-size: 20px;
+  }
+
+  .promo__button {
+    margin-left: -2px;
+    width: 292px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding: 142px 100px 0;
+  }
+
+  .promo__header {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-bottom: 29px;
+  }
+
+  .promo__title {
+    font-size: 53px;
+  }
+
+  .promo__hot-offer {
+    padding: 0 52px 0 49px;
+  }
+
+  .promo__container {
+    margin-left: 175px;
+  }
+
+  .promo__description {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__price {
+    padding-top: 108px;
+  }
 }

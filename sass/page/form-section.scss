@@ -1,16 +1,60 @@
-.form-section {
-  @include main-padding (29px, 0, 57px, 0);
-}
-
 .form-section__header {
+  padding: 71px 0 75px;
   background-color: #f1f1f1;
 }
 
 .form-section__title {
-  @include main-padding (75px, 0, 81px, 0 );
+  @include reset-indent;
+  text-align: center;
+
   @include font-bold (27px, 400, normal, 30px, $header-color);
 }
 
 .form-section__description {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 10px 30px 0;
+
   @include font-regular (13px, 400, normal, 24px, $content-color);
+}
+
+@media (min-width: $tablet-width) {
+  .form-section {
+    margin-top: -57px;
+    border-top: 1px solid #dfdfdf;
+  }
+
+  .form-section__header {
+    padding: 103px 0 92px;
+  }
+
+  .form-section__title {
+    font-size: 43px;
+  }
+
+  .form-section__description {
+    padding: 72px 50px 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-section {
+    margin-top: -42px;
+  }
+
+  .form-section__header {
+    width: 100%;
+  }
+
+  .form-section__title {
+    font-size: 53px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+  }
+
+  .form-section__description {
+    padding: 136px 0 17px;
+  }
 }
