@@ -14,7 +14,6 @@
 
   @include font-bold (27px, 400, normal, 30px, #010000);
   text-align: center;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -36,7 +35,7 @@
     padding: 151px 50px 357px;
   }
 
-  .main-header__caption  {
+  .main-header__caption {
     font-size: 53px;
     line-height: 59px;
   }
