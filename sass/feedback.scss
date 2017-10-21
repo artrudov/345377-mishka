@@ -73,6 +73,10 @@
       position: left;
     }
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+
     &__title {
       width: 50%;
       margin-top: 36px;

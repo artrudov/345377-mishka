@@ -101,23 +101,26 @@
   }
 
   .promo__container {
-    width: 300px;
+    width: 668px;
     padding-bottom: 50px;
+    margin: 0 auto;
   }
 
   .promo__description {
+    width: 300px;
     padding-bottom: 35px;
     font-size: 17px;
     line-height: 30px;
   }
 
   .promo__image {
-    float: right;
-    margin-top: -175px;
-    margin-right: -367px;
+    position: absolute;
+    margin-top: -260px;
+    margin-left: 335px;
   }
 
   .promo__price {
+    width: 300px;
     margin-left: -11px;
     padding-top: 56px;
     padding-bottom: 35px;
@@ -158,6 +161,12 @@
     padding-bottom: 50px;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .promo__image {
+    margin-top: -444px;
+    margin-left: 350px;
+    z-index: -1;
   }
 
   .promo__price {

@@ -69,6 +69,11 @@
   .features__list {
     padding: 0 50px;
     flex-direction: row;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position-y: 95px;
+    background-color: #f9f9f9;
   }
 
   .features__item {
@@ -77,12 +82,12 @@
 
   .features__link {
     width: 100%;
+    padding: 28px 0 30px 36px;
     box-sizing: border-box;
     font-size: 20px;
     line-height: 30px;
 
     &--interior {
-      padding: 28px 0 20px 36px;
 
       &::before {
         top: 30px;
@@ -90,7 +95,6 @@
     }
 
     &--toys {
-      padding: 28px 0 20px 36px;
 
       &::before {
         top: 31px;
