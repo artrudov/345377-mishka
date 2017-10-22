@@ -78,7 +78,23 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding: 65px 50px 0;
+    position: relative;
+    padding: 47px 50px 20px;
+  }
+
+  .promo::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 17px;
+    bottom: 0;
+    left: 0;
+    background: {
+      image: url("../img/bg-zigzag-line.svg");
+      repeat: repeat-x;
+      position-y: bottom;
+      size: auto 17px;
+    }
   }
 
   .promo__header {
@@ -115,13 +131,13 @@
 
   .promo__image {
     position: absolute;
-    margin-top: -260px;
+    margin-top: -264px;
     margin-left: 335px;
   }
 
   .promo__price {
     width: 300px;
-    margin-left: -11px;
+    margin-left: -7px;
     padding-top: 56px;
     padding-bottom: 35px;
     font-size: 20px;
@@ -135,7 +151,11 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding: 142px 100px 0;
+    padding: 119px 100px 0;
+  }
+
+  .promo::before {
+    bottom: -40px;
   }
 
   .promo__header {

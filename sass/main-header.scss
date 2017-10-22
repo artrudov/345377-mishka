@@ -17,6 +17,27 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-header {
+    position: relative;
+    background-color: #f9f9f9;
+  }
+
+  .main-header::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 19px;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: {
+      image: url("../img/bg-zigzag-fill.svg");
+      repeat: repeat-x;
+      position-y: bottom;
+      size: auto 19px;
+    }
+  }
+
   .main-header__content {
     margin-top: -57px;
     padding: 152px 50px 373px;
@@ -53,6 +74,11 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
+  }
+
+  .main-header::before {
+    height: 37px;
+    background-size: auto;
   }
 
   .main-header__caption {

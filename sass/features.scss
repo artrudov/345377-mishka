@@ -69,20 +69,16 @@
   .features__list {
     padding: 0 50px;
     flex-direction: row;
-
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: repeat-x;
-    background-position-y: 95px;
-    background-color: #f9f9f9;
   }
 
   .features__item {
     flex-basis: 50%;
+
   }
 
   .features__link {
     width: 100%;
-    padding: 28px 0 30px 36px;
+    padding: 28px 0 40px 36px;
     box-sizing: border-box;
     font-size: 20px;
     line-height: 30px;
@@ -109,12 +105,6 @@
   }
 
   .features__link {
-    &--interior {
-      padding: 28px 0 24px 36px;
-    }
-
-    &--toys {
-      padding: 28px 0 24px 36px;
-    }
+    padding: 28px 0 47px 36px;
   }
 }
