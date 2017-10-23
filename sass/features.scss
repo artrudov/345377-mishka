@@ -77,21 +77,18 @@
 
   .features__link {
     width: 100%;
+    padding: 28px 0 40px 36px;
     box-sizing: border-box;
     font-size: 20px;
     line-height: 30px;
 
     &--interior {
-      padding: 28px 0 20px 36px;
-
       &::before {
         top: 30px;
       }
     }
 
     &--toys {
-      padding: 28px 0 20px 36px;
-
       &::before {
         top: 31px;
         right: 34px;
@@ -107,12 +104,6 @@
   }
 
   .features__link {
-    &--interior {
-      padding: 28px 0 24px 36px;
-    }
-
-    &--toys {
-      padding: 28px 0 24px 36px;
-    }
+    padding: 28px 0 47px 36px;
   }
 }

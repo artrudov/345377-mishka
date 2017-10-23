@@ -183,6 +183,10 @@
     padding-bottom: 15px;
     margin-left: 0;
 
+    &--logo {
+      padding-top: 22px;
+    }
+
     &--catalog {
       padding-top: 20px;
     }
@@ -230,7 +234,8 @@
 
     &--logo {
       text-align: center;
-      padding-top: 29px;
+      padding-top: 10px;
+      margin-left: -10px;
       order: 3;
     }
 
@@ -278,7 +283,7 @@
     padding: 0;
 
     &--catalog {
-      padding-top: 30px;
+      padding-top: 33px;
       padding-bottom: 34px;
       font-size: 17px;
       letter-spacing: 0.2px;
@@ -296,16 +301,17 @@
 
     &--cart {
       padding-top: 33px;
+      padding-right: 2px;
 
       &::before {
         top: 32px;
-        left: 71px;
+        left: 81px;
         opacity: 0.3;
       }
     }
   }
 
   .main-navigation__icon {
-    margin-top: 29px;
+    margin-top: 38px;
   }
 }
