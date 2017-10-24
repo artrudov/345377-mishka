@@ -32,7 +32,7 @@
     margin-top: -53px;
     margin-left: 8px;
     background: {
-      image: url("../img/icon-feature-flower.svg");
+      image: url("../img/sprite-demo.svg#flower");
       size: 32px 37px;
     }
   }
@@ -42,19 +42,19 @@
     height: 27px;
     margin-top: -54px;
     background: {
-      image: url("../img/icon-feature-money.svg");
+      image: url("../img/sprite-demo.svg#price");
       size: 47px 27px;
     }
   }
 
   &--heart::before {
-    width: 33px;
-    height: 27px;
+    width: 66px;
+    height: 54px;
     margin-top: -49px;
     margin-left: 7px;
     background: {
-      image: url("../img/icon-feature-heart.svg");
-      size: 33px 27px;
+      image: url("../img/sprite-demo.svg#heart");
+      repeat: no-repeat;
     }
   }
 
@@ -65,7 +65,7 @@
     margin-left: 4px;
     color: #63d1bb;
     background: {
-      image: url("../img/icon-feature-ball.svg");
+      image: url("../img/sprite-demo.svg#ball");
       size: 34px 34px;
     }
   }
@@ -76,7 +76,7 @@
     margin-top: -50px;
     margin-left: -6px;
     background: {
-      image: url("../img/icon-feature-rocket.svg");
+      image: url("../img/sprite-demo.svg#rocket");
       size: 54px 23px;
     }
   }
@@ -87,7 +87,7 @@
     margin-top: -52px;
     margin-left: 3px;
     background: {
-      image: url("../img/icon-feature-gift.svg");
+      image: url("../img/sprite-demo.svg#gift");
       size: 33px 33px;
     }
   }
