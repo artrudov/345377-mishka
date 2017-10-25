@@ -15,10 +15,6 @@
     height: 21px;
     margin-top: 6px;
     margin-left: -9px;
-    background: {
-      image: url("../img/icon-insta.svg");
-      size: 21px 21px;
-    }
   }
 
   &--facebook {
@@ -26,10 +22,6 @@
     height: 28px;
     margin-right: 37px;
     margin-left: 43px;
-    background: {
-      image: url("../img/icon-fb.svg");
-      size: 15px 28px;
-    }
   }
 
   &--twitter {
@@ -37,10 +29,6 @@
     height: 20px;
     margin-top: 6px;
     margin-right: -2px;
-    background: {
-      image: url("../img/icon-twitter.svg");
-      size: 24px 20px;
-    }
   }
 }
 

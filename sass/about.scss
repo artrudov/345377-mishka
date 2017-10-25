@@ -23,61 +23,58 @@
 
   &::before {
     position: absolute;
+    display: block;
     content: "";
   }
 
   &--flower::before {
-    width: 32px;
+    width: 35px;
     height: 37px;
-    margin-top: -53px;
-    margin-left: 8px;
+    margin-top: -54px;
+    margin-left: 5px;
     background: {
-      image: url("../img/sprite-demo.svg#flower");
-      size: 32px 37px;
+      image: url("../img/sprite.svg#shape-flower-view");
     }
   }
 
   &--price::before {
     width: 47px;
     height: 27px;
-    margin-top: -54px;
+    margin-top: -53px;
+    margin-left: 1px;
     background: {
-      image: url("../img/sprite-demo.svg#price");
-      size: 47px 27px;
+      image: url("../img/sprite.svg#shape-money-view");
     }
   }
 
   &--heart::before {
-    width: 66px;
-    height: 54px;
-    margin-top: -49px;
-    margin-left: 7px;
+    width: 33px;
+    height: 33px;
+    margin-top: -52px;
+    margin-left: 3px;
     background: {
-      image: url("../img/sprite-demo.svg#heart");
-      repeat: no-repeat;
+      image: url("../img/sprite.svg#shape-heart-view");
     }
   }
 
   &--ball::before {
     width: 34px;
     height: 34px;
-    margin-top: -50px;
+    margin-top: -51px;
     margin-left: 4px;
-    color: #63d1bb;
     background: {
-      image: url("../img/sprite-demo.svg#ball");
-      size: 34px 34px;
+      image: url("../img/sprite.svg#shape-ball-view");
     }
+
   }
 
   &--domestic::before {
-    width: 54px;
+    width: 67px;
     height: 23px;
-    margin-top: -50px;
-    margin-left: -6px;
+    margin-top: -49px;
+    margin-left: -13px;
     background: {
-      image: url("../img/sprite-demo.svg#rocket");
-      size: 54px 23px;
+      image: url("../img/sprite.svg#shape-rocket-view");
     }
   }
 
@@ -87,8 +84,7 @@
     margin-top: -52px;
     margin-left: 3px;
     background: {
-      image: url("../img/sprite-demo.svg#gift");
-      size: 33px 33px;
+      image: url("../img/sprite.svg#shape-gift-view");
     }
   }
 
@@ -184,9 +180,12 @@
   }
 
   .about__title {
-    padding-bottom: 32px;
+    padding-top: 46px;
+    padding-bottom: 33px;
     padding-left: 172px;
+    margin-left: 0px;
     font-size: 53px;
+    letter-spacing: -0.5px;
   }
 
   .about__container {

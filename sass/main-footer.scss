@@ -35,20 +35,10 @@
 
   @include font-bold (19px, 400, normal, 18px, $header-color);
   text-decoration: none;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 35px;
-    right: -56px;
-    top: -1px;
+.main-footer__icon {
 
-    background: {
-      image: url("../img/logo-htmlacademy.svg");
-      repeat: no-repeat;
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {

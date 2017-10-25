@@ -31,6 +31,7 @@
     top: 24px;
     right: 36px;
     opacity: 0.2;
+    color: red;
     background: {
       image: url("../img/icon-interior.svg");
       repeat: no-repeat;
@@ -105,5 +106,9 @@
 
   .features__link {
     padding: 28px 0 47px 36px;
+  }
+
+  .features__link--interior:hover::before {
+    opacity: 1;
   }
 }
