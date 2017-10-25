@@ -30,12 +30,11 @@
     height: 63px;
     top: 24px;
     right: 36px;
-    opacity: 0.2;
+    opacity: 0.3;
     color: red;
     background: {
-      image: url("../img/icon-interior.svg");
+      image: url("../img/sprite.svg#shape-interior-view");
       repeat: no-repeat;
-      size: 40px 60px;
     }
   }
 }
@@ -52,13 +51,20 @@
     height: 60px;
     top: 21px;
     right: 27px;
-    opacity: 0.2;
+    opacity: 0.3;
     background: {
-      image: url("../img/icon-toy.svg");
+      image: url("../img/sprite.svg#shape-toy-view");
       repeat: no-repeat;
-      size: 60px 60px;
     }
   }
+}
+
+.features__link--toys:hover::before {
+  opacity: 0.5;
+}
+
+.features__link--interior:hover::before {
+  opacity: 0.5;
 }
 
 .features__link span {
@@ -106,9 +112,5 @@
 
   .features__link {
     padding: 28px 0 47px 36px;
-  }
-
-  .features__link--interior:hover::before {
-    opacity: 1;
   }
 }

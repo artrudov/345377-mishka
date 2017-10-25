@@ -67,22 +67,6 @@
   &--cart {
     margin-left: 12px;
     padding: 27px 0 28px;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 21px;
-      height: 23px;
-      margin-left: -45px;
-      opacity: 0.3;
-      background: {
-        image: url("../img/icon-cart.svg");
-        size: 21px 18px;
-        repeat: no-repeat;
-        position: 0 4px;
-      }
-    }
   }
 }
 
@@ -115,12 +99,6 @@
   height: 14px;
   font-size: 0;
   border: none;
-  background: {
-    image: url("../img/icon-menu-open.svg");
-    color: #ffffff;
-    size: 20px 14px;
-    repeat: no-repeat;
-  }
 }
 
 @media (min-width: $tablet-width) {

@@ -28,7 +28,7 @@
   left: 138px;
 
   background: {
-    image: url("../img/icon-map-pin.svg");
+    image: url("../img/sprite.svg#shape-map-pin-view");
     size: 66px 101px;
     repeat: no-repeat;
   }
@@ -116,7 +116,7 @@
       top: 78px;
       right: 0;
       background: {
-        image: url("../img/icon-flag.svg");
+        image: url("../img/sprite.svg#shape-flag-view");
         repeat: no-repeat;
         size: 52px 85px;
       }

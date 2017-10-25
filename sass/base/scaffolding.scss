@@ -19,7 +19,7 @@ img {
 
 .button--left {
   background: {
-    image: url("../img/icon-left-arrow.svg");
+    image: url("../img/sprite.svg#shape-left-arrow-view");
     repeat: no-repeat;
     position: 50%;
   }
@@ -27,7 +27,7 @@ img {
 
 .button--right {
   background: {
-    image: url("../img/icon-right-arrow.svg");
+    image: url("../img/sprite.svg#shape-right-arrow-view");
     repeat: no-repeat;
     position: 50%;
   }
