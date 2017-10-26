@@ -21,7 +21,8 @@ img {
   background: {
     image: url("../img/sprite.svg#shape-left-arrow-view");
     repeat: no-repeat;
-    position: 50%;
+    position: 50% 45%;
+    size: 50px 27px;
   }
 }
 
@@ -29,7 +30,8 @@ img {
   background: {
     image: url("../img/sprite.svg#shape-right-arrow-view");
     repeat: no-repeat;
-    position: 50%;
+    position: 50% 45%;
+    size: 50px 27px;
   }
 }
 

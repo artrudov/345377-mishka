@@ -16,7 +16,7 @@
 
 .main-footer__social {
   margin: 0 30px;
-  padding: 22px 0 28px;
+  padding: 25px 0 28px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -38,7 +38,9 @@
 }
 
 .main-footer__icon {
-
+  position: absolute;
+  right: -55px;
+  top: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -60,24 +62,24 @@
 
     border: none;
     margin-top: 5px;
-    margin-left: 97px;
+    margin-left: 84px;
   }
 
   .main-footer__copyright {
     @include reset-indent;
   }
 
+  .main-footer__description {
+    padding-top: 5px;
+  }
+
   .main-footer__link--copyright {
     padding-right: 55px;
-
-    &::after {
-      right: 0;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-header__contaoner {
+  .main-header__container {
     padding: 52px 100px 50px;
   }
 }
