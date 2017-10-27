@@ -102,7 +102,7 @@
   .contacts__title {
     position: relative;
     font-size: 43px;
-    padding-top: 104px;
+    padding-top: 17px;
     padding-bottom: 40px;
     margin-left: -5px;
 
@@ -110,8 +110,8 @@
       position: absolute;
       content: "";
       width: 52px;
-      height: 85px;
-      top: 78px;
+      height: 82px;
+      top: -9px;
       right: 0;
       background: {
         image: url("../img/sprite.svg#shape-flag-view");
@@ -160,7 +160,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 143px 100px 25px 100px;
+    padding: 54px 100px 25px 100px;
   }
 
   .contacts__header {

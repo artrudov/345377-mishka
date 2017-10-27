@@ -14,6 +14,15 @@
   display: none;
 }
 
+.main-footer__link--logo:hover {
+  fill: #46c1ae;
+}
+
+.main-footer__link--logo:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 .main-footer__social {
   margin: 0 30px;
   padding: 25px 0 28px;
@@ -41,7 +50,18 @@
   position: absolute;
   right: -55px;
   top: 0;
+  fill: #63d1bb;
 }
+
+.main-footer__link--copyright:hover > .main-footer__icon {
+  fill: #46c1ae;
+}
+
+.main-footer__link--copyright:active,
+.main-footer__link--copyright:active > .main-footer__icon {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) {
   .main-footer {

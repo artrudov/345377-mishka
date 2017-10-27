@@ -7,12 +7,11 @@
   <meta name="format-detection" content="telephone=no">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
 
-  <header class="main-header">
+  <header class="main-header main-header--index">
     <h2 class="visually-hidden">Основное меню</h2>
     <nav class="main-navigation">
       <ul class="main-navigation__list">
@@ -164,27 +163,28 @@
     </section>
 
     <section class="feedback">
-      <h2 class="feedback__title">Отзывы</h2>
+      <div class="feedback__container">
+        <h2 class="feedback__title">Отзывы</h2>
 
-      <h3 class="visually-hidden">Текст отзыва</h3>
-      <p class="feedback__text">
-        Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-      </p>
-      <address class="feedback__autor-name">Анастасия Красильникова<br>
-            <span class="feedback__autor-contact">@misssssiskras<span></address>
+        <h3 class="visually-hidden">Текст отзыва</h3>
+        <p class="feedback__text">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+        </p>
+        <address class="feedback__autor-name">Анастасия Красильникова<br>
+              <span class="feedback__autor-contact">@misssssiskras<span></address>
 
 
-      <div class="feedback__control-block">
-        <button class="button button--left feedback__control-button">
-            Предыдущий отзыв
-          </button>
-        <button class="button button--right feedback__control-button">
-            Следующий отзыв
-          </button>
+        <div class="feedback__control-block">
+          <button class="button button--left feedback__control-button">
+              Предыдущий отзыв
+            </button>
+          <button class="button button--right feedback__control-button">
+              Следующий отзыв
+            </button>
+        </div>
+
+        <a href="#" class="button feedback__control-link">Написать</a>
       </div>
-
-      <a href="#" class="button feedback__control-link">Написать</a>
-
     </section>
 
     <section class="contacts">
@@ -236,7 +236,7 @@
                 <svg width="22" height="21">
                   <use xlink:href="img/sprite.svg#instagram"></use>
                 </svg>
-              </a>
+            </a>
           </li>
           <li class="social-icons__item">
             <a href="https://ru-ru.facebook.com/" class="social-icons__link social-icons__link--facebook">
@@ -244,7 +244,7 @@
                 <svg width="15" height="28">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
-              </a>
+            </a>
           </li>
           <li class="social-icons__item">
             <a href="https://twitter.com/" class="social-icons__link social-icons__link--twitter">
@@ -252,7 +252,7 @@
                 <svg width="24" height="20">
                   <use xlink:href="img/sprite.svg#twitter"></use>
                 </svg>
-              </a>
+            </a>
           </li>
         </ul>
       </section>
@@ -274,14 +274,30 @@
       <h2 class="modal-cart__title">Добавить в корзину</h2>
     </header>
     <p class="modal-cart__choice">Выберите размер</p>
-    <ul class="modal-cart__size-list">
-      <li class="modal-cart__size-item">S</li>
-      <li class="modal-cart__size-item">M</li>
-      <li class="modal-cart__size-item">L</li>
-    </ul>
-    <button class="button modal-cart__button">Добавить</button>
+    <form method="get" action="https://echo.htmlacademy.ru" name="Order" class="modal-cart__form">
+
+      <ul class="modal-cart__list">
+        <li class="modal-cart__item">
+          <input type="radio" name="Размер" value="S" id="size-s" class="modal-cart__radio">
+          <label for="size-s" class="modal-cart__label">S</label>
+        </li>
+
+        <li class="modal-cart__item">
+          <input type="radio" name="Размер" value="M" id="size-m" class="modal-cart__radio">
+          <label for="size-m" class="modal-cart__label">M</label>
+        </li>
+
+        <li class="modal-cart__item">
+          <input type="radio" name="Размер" value="L" id="size-l" class="modal-cart__radio">
+          <label for="size-l" class="modal-cart__label">L</label>
+        </li>
+      </ul>
+
+      <button class="button modal-cart__button">Добавить</button>
+    </form>
   </section>
 
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>
