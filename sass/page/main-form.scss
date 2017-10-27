@@ -108,12 +108,12 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + .main-form__label--radio::before {
-  padding: 5px;
+  padding: 14px;
   background: {
     color: #62d1ba;
     repeat: no-repeat;
     position: center;
-    clip: border-box;
+    clip: content-box;
   }
 }
 
