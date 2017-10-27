@@ -97,11 +97,15 @@
             </a>
             <div class="catalog-product__description">
               <a href="#" class="catalog-product__link">
-                <h2 class="catalog-product__title">Зайчик-попрыгайчик</h2>
+                <h2 class="catalog-product__title catalog-product__link--title">Зайчик-попрыгайчик</h2>
               </a>
               <p class="catalog-product__text">Рост 30 см, вес 200 г</p>
               <p class="catalog-product__price">1 200 руб.
-                <a href="#" class="catalog-product__link catalog-product__link--price">Купить</a>
+                <a href="#" class="catalog-product__link catalog-product__link--price">Купить
+                  <svg width="20" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
               </p>
             </div>
           </article>
@@ -117,12 +121,16 @@
               </picture>
               </a>
             <div class="catalog-product__description">
-              <a href="#" class="catalog-product__link">
+              <a href="#" class="catalog-product__link catalog-product__link--title">
                 <h2 class="catalog-product__title">Корзинка для белья</h2>
               </a>
               <p class="catalog-product__text">Диаметр 15 см, высота 10 см</p>
               <p class="catalog-product__price">690 руб.
-                <a href="#" class="catalog-product__link catalog-product__link--price">Купить</a>
+                <a href="#" class="catalog-product__link catalog-product__link--price">Купить
+                  <svg width="20" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
               </p>
             </div>
           </article>
@@ -138,12 +146,16 @@
               </picture>
               </a>
             <div class="catalog-product__description">
-              <a href="#" class="catalog-product__link">
+              <a href="#" class="catalog-product__link catalog-product__link--title">
                 <h2 class="catalog-product__title catalog-product__title--big">Большая корзинка для игрушек</h2>
               </a>
               <p class="catalog-product__text">Диаметр 30 см, высота 30 см</p>
               <p class="catalog-product__price">1 500 руб.
-                <a href="#" class="catalog-product__link catalog-product__link--price">Купить</a>
+                <a href="#" class="catalog-product__link catalog-product__link--price">Купить
+                  <svg width="20" height="19">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </a>
               </p>
             </div>
           </article>
@@ -155,15 +167,22 @@
     <section class="manufacturing-procces">
       <div class="manufacturing-procces__container">
         <h3 class="manufacturing-procces__title">Процесс производства</h3>
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства" class="manufacturing-procces__image">
-        </picture>
+        <div class="manufacturing-procces__video">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео процесса производства" class="manufacturing-procces__image">
+          </picture>
+          <button class="button manufacturing-procces__button">Просмотреть видео
+            <svg width="101" height="77" class="manufacturing-procces__icon-play">
+              <use xlink:href="img/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </div>
         <p class="manufacturing-procces__description">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
-        <a href="form.html" class="button manufacturing-procces__link">Сделать заказ</a>
+        <a href="form.html" class="button button--effect manufacturing-procces__link">Сделать заказ</a>
       </div>
     </section>
 
@@ -225,12 +244,27 @@
       <h2 class="modal-cart__title">Добавить в корзину</h2>
     </header>
     <p class="modal-cart__choice">Выберите размер</p>
-    <ul class="modal-cart__size-list">
-      <li class="modal-cart__size-item">S</li>
-      <li class="modal-cart__size-item">M</li>
-      <li class="modal-cart__size-item">L</li>
-    </ul>
-    <button class="button modal-cart__button">Добавить</button>
+    <form method="get" action="https://echo.htmlacademy.ru" name="Order" class="modal-cart__form">
+
+      <ul class="modal-cart__list">
+        <li class="modal-cart__item">
+          <input type="radio" name="Размер" value="S" id="size-s" class="modal-cart__radio">
+          <label for="size-s" class="modal-cart__label">S</label>
+        </li>
+
+        <li class="modal-cart__item">
+          <input type="radio" name="Размер" value="M" id="size-m" class="modal-cart__radio">
+          <label for="size-m" class="modal-cart__label">M</label>
+        </li>
+
+        <li class="modal-cart__item">
+          <input type="radio" name="Размер" value="L" id="size-l" class="modal-cart__radio">
+          <label for="size-l" class="modal-cart__label">L</label>
+        </li>
+      </ul>
+
+      <button class="button modal-cart__button">Добавить</button>
+    </form>
   </section>
 
   <script src="js/picturefill.min.js"></script>

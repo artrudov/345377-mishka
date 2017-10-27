@@ -40,6 +40,17 @@
 }
 
 .main-navigation__link {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-navigation__link {
   display: block;
 
   @include font-bold (17px, 400, normal, 24px, $header-color);
@@ -68,6 +79,26 @@
     margin-left: 12px;
     padding: 27px 0 28px;
   }
+}
+
+.main-navigation__icon:hover {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-navigation__icon:active {
+  fill: #63d1bb;
+  opacity: 0.3;
+}
+
+.main-navigation__link--cart:hover > svg {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-navigation__link--cart:active > svg {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 .main-navigation__label {
