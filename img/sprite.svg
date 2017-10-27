@@ -94,7 +94,10 @@
     <g transform="translate(0 192)">
       <path fill="#63d1bb" d="M26-177l6-4v16l-6-4V-177z M24-177v8c0,2.209-1.791,4-4,4H4c-2.209,0-4-1.791-4-4v-8c0-2.209,1.791-4,4-4h10 c0-1.105,0.895-2,2-2v-2H5c-0.553,0-1-0.447-1-1s0.447-1,1-1h12c0.553,0,1,0.447,1,1v3c1.105,0,2,0.895,2,2 C22.209-181,24-179.209,24-177z M12-177H4v8h8V-177z M20-176c0-0.553-0.447-1-1-1h-4c-0.553,0-1,0.447-1,1s0.447,1,1,1h4 C19.553-175,20-175.447,20-176z"/>
     </g>
+  </symbol>
 
+  <symbol viewBox="0 0 33 23" id="shape-tick">
+    <polygon points="32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 "/>
   </symbol>
 
   <!-- define view locations for each icon -->
@@ -113,6 +116,7 @@
     <view id="shape-zigzag-fill-view" viewBox="0 580 1150 34"/>
     <view id="shape-zigzag-line-view" viewBox="0 620 1150 23"/>
     <view id="shape-video-view" viewBox="0 650 32 32"/>
+    <view id="shape-tick-view" viewBox="0 690 33 23"/>
 
   	<use xlink:href="#shape-flower" width="35" height="37" x="0" y="0" id="flower"></use>
   	<use xlink:href="#shape-ball" width="34" height="34" x="0" y="38" id="ball"></use>
@@ -129,6 +133,7 @@
     <use xlink:href="#shape-zigzag-fill" width="100%" height="34" x="0" y="580" id="zigzag-fill"></use>
     <use xlink:href="#shape-zigzag-line" width="100%" height="23" x="0" y="620" id="zigzag-line"></use>
     <use xlink:href="#shape-video" width="32" height="32" x="0" y="650" id="video"></use>
+    <use xlink:href="#shape-tick" width="33" height="23" x="0" y="690" id="tick"></use>
 
   <symbol viewBox="0 0 28 34" id="logo-academy" >
     <g>
@@ -160,10 +165,6 @@
     <rect fill="#231F20" width="19.958" height="2"/>
     <rect y="6" fill="#231F20" width="19.958" height="2"/>
     <rect y="12" fill="#231F20" width="19.958" height="2"/>
-  </symbol>
-
-  <symbol viewBox="0 0 113 46" id="tick">
-    <polygon points="32.666,1.414 31.252,0 11.338,19.914 1.414,9.989 0,11.403 9.924,21.328 9.924,21.328 11.338,22.742 11.338,22.742 11.339,22.742 12.753,21.328 12.752,21.328 "/>
   </symbol>
 
   <symbol viewBox="-1 -1 18 18" id="search">

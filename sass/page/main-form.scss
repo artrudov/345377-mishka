@@ -104,6 +104,17 @@ input[type="radio"] {
   border-radius: 50%;
   left: 0;
   top: 3px;
+  box-sizing: border-box;
+}
+
+input[type="radio"]:checked + .main-form__label--radio::before {
+  padding: 5px;
+  background: {
+    color: #62d1ba;
+    repeat: no-repeat;
+    position: center;
+    clip: border-box;
+  }
 }
 
 .main-form__label--checkbox::before {
@@ -114,6 +125,15 @@ input[type="radio"] {
   border: 2px solid #444444;
   left: 0;
   top: 3px;
+}
+
+input[type="checkbox"]:checked + .main-form__label--checkbox::before {
+  background: {
+    image: url("../img/sprite.svg#shape-tick-view");
+    size: 33px 23px;
+    repeat: no-repeat;
+    position: center;
+  }
 }
 
 .main-form__input::-webkit-input-placeholder {
