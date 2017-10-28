@@ -13,6 +13,7 @@
 
 .manufacturing-procces__video {
   position: relative;
+  margin: 0 auto;
 }
 
 .manufacturing-procces__button {
@@ -66,7 +67,7 @@
 
 .manufacturing-procces__description {
   @include reset-indent;
-  padding: 28px 33px 25px;
+  padding: 7px 33px 25px;
 
   @include font-regular (13px, 400, normal, 24px, $content-color);
 }
@@ -93,12 +94,12 @@
 
   .manufacturing-procces__title {
     width: auto;
-    padding: 39px 10px 0 105px;
+    padding: 17px 10px 0 105px;
     font-size: 20px;
     order: 2;
 
     &::before {
-      top: 34px;
+      top: 12px;
       left: 40px;
     }
   }
@@ -184,6 +185,7 @@
   .manufacturing-procces__description {
     width: 230px;
     margin-left: 720px;
+    padding-top: 17px;
     padding-bottom: 46px;
   }
 

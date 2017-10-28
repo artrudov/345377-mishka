@@ -44,16 +44,12 @@
           <a href="form.html" class="main-navigation__link main-navigation__link--individual">Вязание на заказ</a>
         </li>
 
-        <li class="main-navigation__item main-navigation__item--form">
-          <form class="main-navigation__form">
-            <input type="search" id="search-input" class="main-navigation__input" placeholder="Поиск:" />
-            <label for="search-input" class="main-navigation__label">
-              <svg class="main-navigation__icon" width="18" height="20">
-                <use xlink:href="img/sprite.svg#search"></use>
-              </svg>
-                <a class="main-navigation__link main-navigation__link--search">Поиск по сайту</a>
-              </label>
-          </form>
+        <li class="main-navigation__item main-navigation__item--search">
+          <a class="main-navigation__link main-navigation__link--search">
+            <svg class="main-navigation__icon main-navigation__icon--search" width="18" height="20">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            Поиск по сайту</a>
         </li>
 
         <li class="main-navigation__item main-navigation__item--cart">
@@ -95,10 +91,10 @@
 
           <p class="main-form__column">
             <input type="radio" name="Type" value="Аксессуар для интерьера" id="accessory" checked>
-            <label for="accessory" class="main-form__label main-form__label--radio">Аксессуар для интерьера</label>
+            <label for="accessory" class="main-form__label main-form__label--radio" tabindex="0">Аксессуар для интерьера</label>
 
             <input type="radio" name="Type" value="Детская игрушка" id="children-toy">
-            <label for="children-toy" class="main-form__label main-form__label--radio">Детская игрушка</label>
+            <label for="children-toy" class="main-form__label main-form__label--radio" tabindex="0">Детская игрушка</label>
           </p>
         </section>
 
@@ -109,22 +105,22 @@
 
             <p class="main-form__row main-form__row--color">
               <input type="checkbox" name="Color" value="Белый" id="color_white" checked>
-              <label for="color_white" class="main-form__label main-form__label--checkbox">Белый</label>
+              <label for="color_white" class="main-form__label main-form__label--checkbox" tabindex="0">Белый</label>
 
               <input type="checkbox" name="Color" value="Серый" id="color_gray" checked>
-              <label for="color_gray" class="main-form__label main-form__label--checkbox">Серый</label>
+              <label for="color_gray" class="main-form__label main-form__label--checkbox" tabindex="0">Серый</label>
 
               <input type="checkbox" name="Color" value="Тиффани" id="color_tiffany">
-              <label for="color_tiffany" class="main-form__label main-form__label--checkbox">&laquo;Тиффани&raquo;</label>
+              <label for="color_tiffany" class="main-form__label main-form__label--checkbox" tabindex="0">&laquo;Тиффани&raquo;</label>
 
               <input type="checkbox" name="Color" value="Черный" id="color_black">
-              <label for="color_black" class="main-form__label main-form__label--checkbox">Черный</label>
+              <label for="color_black" class="main-form__label main-form__label--checkbox" tabindex="0">Черный</label>
 
               <input type="checkbox" name="Color" value="Розовый" id="color_pink">
-              <label for="color_pink" class="main-form__label main-form__label--checkbox">Розовый</label>
+              <label for="color_pink" class="main-form__label main-form__label--checkbox" tabindex="0">Розовый</label>
 
-              <input type="checkbox" name="Color" value="Оранжевый" id="color_orange" class="main-form__input main-form__input--checkbox">
-              <label for="color_orange" class="main-form__label main-form__label--checkbox">Оранжевый</label>
+              <input type="checkbox" name="Color" value="Оранжевый" id="color_orange" class="main-form__input main-form__input--checkbox" disabled>
+              <label for="color_orange" class="main-form__label main-form__label--checkbox" tabindex="0" >Оранжевый</label>
             </p>
           </div>
         </section>
@@ -159,8 +155,11 @@
             <h2 class="visually-hidden">Ваш телефон</h2>
             <p class="main-form__title main-form__title--phone">Тел</p>
 
-            <label for="phone" class="main-form__label visually-hidden">Телефон</label>
+            <label for="phone" class="main-form__label main-form__label--phone">Телефон</label>
             <input type="tel" name="Phone number" placeholder="+7 XXX XX XX*" id="phone" class="main-form__input main-form__input--phone">
+            <svg class="main-form__icon main-form__icon--phone" width="25" height="24">
+              <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
           </div>
         </section>
 
@@ -169,8 +168,11 @@
             <h2 class="visually-hidden">Ваша электронная почта</h2>
             <p class="main-form__title main-form__title--mail">E-Mail</p>
 
-            <label for="email" class="main-form__label visually-hidden">E-Mail пользователя</label>
+            <label for="email" class="main-form__label main-form__label--mail">E-Mail пользователя</label>
             <input type="email" name="E-mail" placeholder="Ваш Email*" id="email" class="main-form__input main-form__input--mail">
+            <svg class="main-form__icon main-form__icon--mail" width="32" height="32">
+              <use xlink:href="img/sprite.svg#mail"></use>
+            </svg>
           </div>
         </section>
 
@@ -178,7 +180,7 @@
           <h2 class="visually-hidden">Дополнительная информация</h2>
           <p class="main-form__title main-form__title--additional">Доп</p>
 
-          <label for="field" class="main-form__label visually-hidden">Дополнительная информация</label>
+          <label for="field" class="main-form__label main-form__label--additional">Дополнительная информация</label>
           <textarea name="Text-field" id="field" class="main-form__input main-form__input--additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </section>
 
