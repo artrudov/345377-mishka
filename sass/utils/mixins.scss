@@ -27,14 +27,6 @@
   color: $color;
 }
 
-/// Примесь для установки внутренних отступов
-@mixin main-padding ($top, $right, $bottom: $top, $left: $right) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-bottom: $bottom;
-  padding-left: $left;
-}
-
 /// Волнистый разделитель секций
 @mixin background-wave {
   background: {

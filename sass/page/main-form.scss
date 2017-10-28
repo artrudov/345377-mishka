@@ -108,7 +108,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + .main-form__label--radio::before {
-  padding: 14px;
+  padding: 8px;
   background: {
     color: #62d1ba;
     repeat: no-repeat;
@@ -130,24 +130,15 @@ input[type="radio"]:checked + .main-form__label--radio::before {
 input[type="checkbox"]:checked + .main-form__label--checkbox::before {
   background: {
     image: url("../img/sprite.svg#shape-tick-view");
-    size: 33px 23px;
+    size: 27px 17px;
     repeat: no-repeat;
     position: center;
   }
 }
 
-.main-form__input::-webkit-input-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $form-color);
-}
-
-.main-form__input::-moz-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $form-color);
-}
-
-.main-form__input:-moz-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $form-color);
-}
-
+.main-form__input::-webkit-input-placeholder,
+.main-form__input::-moz-placeholder,
+.main-form__input:-moz-placeholder,
 .main-form__input:-ms-input-placeholder {
   @include font-regular (17px, 400, normal, 18px, $form-color);
 }
@@ -178,13 +169,23 @@ input[type="checkbox"]:checked + .main-form__label--checkbox::before {
   }
 }
 
+.main-form__input--phone:focus {
+  fill: #62d1ba;
+}
+
+.main-form__input:hover,
+.main-form__input:active,
+.main-form__input:focus {
+  border-color: #62d1ba;
+}
+
 .main-form__input--additional {
   min-height: 142px;
   padding: 14px;
   border: 2px solid #000000;
   box-sizing: border-box;
 }
-
+focus
 .main-form__attention {
   @include reset-indent;
   padding: 16px 0;
@@ -336,9 +337,9 @@ input[type="checkbox"]:checked + .main-form__label--checkbox::before {
       padding-bottom: 58px;
 
       &::before {
-        width: 48px;
-        height: 48px;
-        top: -15px;
+        width: 52px;
+        height: 52px;
+        top: -17px;
       }
     }
 
@@ -376,6 +377,14 @@ input[type="checkbox"]:checked + .main-form__label--checkbox::before {
       padding-right: 26px;
       margin-bottom: 49px;
     }
+  }
+
+  input[type="radio"]:checked + .main-form__label--radio::before {
+    padding: 14px;
+  }
+
+  input[type="checkbox"]:checked + .main-form__label--checkbox::before {
+    background-size: 33px 23px;
   }
 
   .main-form__input {

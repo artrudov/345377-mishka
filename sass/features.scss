@@ -19,7 +19,7 @@
 }
 
 .features__link--interior {
-  @include main-padding (26px, 77px, 28px, 29px);
+  padding: 26px 77px 28px 29px;
   background-color: #63d1bb;
   position: relative;
 
@@ -40,7 +40,7 @@
 }
 
 .features__link--toys {
-  @include main-padding (26px, 114px, 30px, 29px);
+  padding: 26px 114px 30px 29px;
   background-color: #56c3b2;
   position: relative;
 
