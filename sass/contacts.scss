@@ -96,7 +96,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 50px 0px 47px;
+    padding: 50px 0 47px;
   }
 
   .contacts__header {
@@ -175,7 +175,7 @@
     font-size: 53px;
   }
 
-  .contacts__icon  {
+  .contacts__icon {
     right: auto;
     left: 65px;
     top: 78px;
