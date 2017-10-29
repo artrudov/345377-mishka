@@ -42,7 +42,7 @@
 
 .feedback__control-button {
   width: 50%;
-  padding: 36px 0 15px;
+  padding: 11px 0 15px;
   font-size: 0;
   background-color: #ffffff;
   border: 1px solid #ececec;
@@ -72,7 +72,7 @@
     padding: 0;
     padding-bottom: 88px;
     background: {
-      image: url("../img/sprite.svg#shape-zigzag-line-view");
+      image: url("../img/bg-zigzag-line.svg");
       repeat: repeat-x;
       position-y: bottom;
       size: 100% 24px;
@@ -154,7 +154,7 @@
   }
 
   .feedback__container {
-    padding: 48px 0 46px;
+    padding: 48px 0 45px;
   }
 
   .feedback__title {

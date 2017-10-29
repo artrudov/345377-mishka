@@ -49,13 +49,13 @@
   @include font-bold (17px, 400, normal, 16px, $content-color);
 }
 
-  .modal-cart__label:hover {
-    border-color:rgba(68, 68, 68, 0.3);
-  }
+.modal-cart__label:hover {
+  border-color: rgba(68, 68, 68, 0.3);
+}
 
-  input[type="radio"]:checked ~ .modal-cart__label {
-    border-color: #62d1ba;
-  }
+input[type="radio"]:checked ~ .modal-cart__label {
+  border-color: #62d1ba;
+}
 
 .modal-cart__button {
   padding: 20px 0 20px;
@@ -91,7 +91,7 @@
 
   .modal-cart__list {
     justify-content: center;
-  }ю
+  }
 
   .modal-cart__item {
     margin-right: 10px;

@@ -1,5 +1,4 @@
 .promo {
-  max-width: 1150px;
   padding: 27px 30px 35px;
 
   @include font-regular (15px, 400, normal, 24px, $content-color);
@@ -80,7 +79,7 @@
   .promo {
     padding: 47px 50px 20px;
     background: {
-      image: url("../img/sprite.svg#shape-zigzag-line-view");
+      image: url("../img/bg-zigzag-line.svg");
       repeat: repeat-x;
       position-y: bottom;
       size: 100% 24px;
@@ -167,8 +166,8 @@
   }
 
   .promo__description {
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 34px;
+    padding-bottom: 51px;
     font-size: 17px;
     line-height: 30px;
   }

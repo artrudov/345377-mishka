@@ -15,11 +15,15 @@
   @include font-bold (18px, 400, normal, 30px, #000000);
 }
 
+.contacts__icon {
+  display: none;
+}
+
 .contacts__map {
   position: relative;
 }
 
-.contacts__map::before {
+.contacts__map--icon {
   position: absolute;
   content: "";
   width: 66px;
@@ -92,7 +96,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 50px 0px 47px;
+    padding: 50px 0 47px;
   }
 
   .contacts__header {
@@ -105,20 +109,15 @@
     padding-top: 17px;
     padding-bottom: 40px;
     margin-left: -5px;
+  }
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 52px;
-      height: 82px;
-      top: -9px;
-      right: 0;
-      background: {
-        image: url("../img/sprite.svg#shape-flag-view");
-        repeat: no-repeat;
-        size: 52px 85px;
-      }
-    }
+  .contacts__icon {
+    display: block;
+    position: absolute;
+    width: 52px;
+    height: 82px;
+    top: -9px;
+    right: 0;
   }
 
   .contacts__data {
@@ -174,12 +173,12 @@
     padding-bottom: 62px;
     padding-left: 175px;
     font-size: 53px;
+  }
 
-    &::before {
-      right: auto;
-      left: 65px;
-      top: 78px;
-    }
+  .contacts__icon {
+    right: auto;
+    left: 65px;
+    top: 78px;
   }
 
   .contacts__map {
