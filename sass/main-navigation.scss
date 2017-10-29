@@ -41,17 +41,6 @@
 
 .main-navigation__link {
   position: relative;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-.main-navigation__link {
   display: block;
 
   @include font-bold (17px, 400, normal, 24px, $header-color);
@@ -79,6 +68,14 @@
   &--cart {
     margin-left: 12px;
     padding: 27px 0 28px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

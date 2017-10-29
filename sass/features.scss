@@ -20,25 +20,11 @@
 
   &:hover {
     margin-top: -5px;
-  }
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &:hover {
     opacity: 0.7;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  &:active {
     opacity: 0.3;
   }
 }
@@ -94,14 +80,13 @@
   }
 
   .features-icon {
-
     &--interior {
-        top: 30px;
+      top: 30px;
     }
 
     &--toys {
-        top: 31px;
-        right: 34px;
+      top: 31px;
+      right: 34px;
     }
   }
 }

@@ -7,13 +7,12 @@
   display: block;
   text-decoration: none;
 
-  &--price{
+  &--price {
     opacity: 0.2;
   }
 }
 
-.catalog-product__link{
-
+.catalog-product__link {
   &--title:hover {
     opacity: 0.6;
   }
@@ -22,9 +21,6 @@
     fill: #63d1bb;
     opacity: 1;
   }
-}
-
-.catalog-product__link{
 
   &--title:active {
     opacity: 0.3;
@@ -70,18 +66,15 @@
 
 .catalog-product__price {
   @include reset-indent;
+  width: 20px;
+  height: 19px;
+  font-size: 0;
   padding-top: 21px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #ececec;
 
   @include font-bold (15px, 400, normal, 24px, $header-color);
-}
-
-.catalog-product__link--price {
-  width: 20px;
-  height: 19px;
-  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {

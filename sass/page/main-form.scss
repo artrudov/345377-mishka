@@ -80,6 +80,7 @@ input[type="radio"] {
 .main-form__label {
   outline: 0;
   display: block;
+
   @include font-bold (17px, 400, normal, 18px, $header-color);
 
   &--first-name {
@@ -430,11 +431,6 @@ input:disabled + .main-form__label {
     }
   }
 
-  .main-form__label--radio::before {
-    width: 52px;
-    height: 53px;
-  }
-
   input[type="radio"]:checked + .main-form__label--radio::before {
     padding: 14px;
   }
@@ -501,7 +497,6 @@ input:disabled + .main-form__label {
   }
 
   .main-form__icon {
-
     &--phone {
       right: 26px;
     }
@@ -601,7 +596,6 @@ input:disabled + .main-form__label {
   }
 
   .main-form__icon {
-
     &--phone {
       right: 183px;
     }
