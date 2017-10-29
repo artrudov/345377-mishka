@@ -166,7 +166,7 @@ input[type="radio"]:checked + .main-form__label--radio::before {
 input[type="checkbox"]:checked + .main-form__label--checkbox::before {
   border-color: #62d1ba;
   background: {
-    image: url("../img/sprite.svg#shape-tick-view");
+    image: url("../img/icon-tick.svg");
     size: 27px 17px;
     repeat: no-repeat;
     position: center;
