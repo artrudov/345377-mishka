@@ -28,7 +28,7 @@
   left: 138px;
 
   background: {
-    image: url("../img/icon-map-pin.svg");
+    image: url("../img/sprite.svg#shape-map-pin-view");
     size: 66px 101px;
     repeat: no-repeat;
   }
@@ -88,13 +88,11 @@
   @include font-bold (17px, 400, normal, 20px, $content-color);
   text-align: center;
   text-decoration: none;
-
-  @include font-bold (18px, 400, normal, 20px, $content-color);
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
-    padding: 50px 0;
+    padding: 50px 0px 47px;
   }
 
   .contacts__header {
@@ -104,7 +102,7 @@
   .contacts__title {
     position: relative;
     font-size: 43px;
-    padding-top: 104px;
+    padding-top: 17px;
     padding-bottom: 40px;
     margin-left: -5px;
 
@@ -112,11 +110,11 @@
       position: absolute;
       content: "";
       width: 52px;
-      height: 85px;
-      top: 78px;
+      height: 82px;
+      top: -9px;
       right: 0;
       background: {
-        image: url("../img/icon-flag.svg");
+        image: url("../img/sprite.svg#shape-flag-view");
         repeat: no-repeat;
         size: 52px 85px;
       }
@@ -162,7 +160,9 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    padding: 143px 100px 25px 100px;
+    max-width: 1050px;
+    padding: 50px 50px 47px;
+    margin: 0 auto;
   }
 
   .contacts__header {
@@ -170,6 +170,7 @@
   }
 
   .contacts__title {
+    padding-top: 104px;
     padding-bottom: 62px;
     padding-left: 175px;
     font-size: 53px;
@@ -177,12 +178,13 @@
     &::before {
       right: auto;
       left: 65px;
+      top: 78px;
     }
   }
 
   .contacts__map {
     width: 528px;
-    margin-top: -341px;
+    margin-top: -336px;
     float: right;
   }
 
@@ -202,7 +204,7 @@
   }
 
   .contacts__footer {
-    padding: 30px 0 80px;
+    padding: 30px 0 60px;
     width: auto;
   }
 

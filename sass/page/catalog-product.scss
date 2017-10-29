@@ -1,21 +1,58 @@
 .catalog-product {
-  min-height: 373px;
+  min-height: 372px;
   border: 1px solid #ececec;
 }
 
 .catalog-product__link {
   display: block;
   text-decoration: none;
+
+  &--price{
+    opacity: 0.2;
+  }
+}
+
+.catalog-product__link{
+
+  &--title:hover {
+    opacity: 0.6;
+  }
+
+  &--price:hover {
+    fill: #63d1bb;
+    opacity: 1;
+  }
+}
+
+.catalog-product__link{
+
+  &--title:active {
+    opacity: 0.3;
+  }
+
+  &--price:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
 }
 
 .catalog-product__image {
   display: block;
+  margin: 0 auto;
 }
 
 .catalog-product__description {
   padding: 25px 28px;
   display: flex;
   flex-direction: column;
+}
+
+.catalog-product__description:hover {
+  box-shadow: 0 3px 10px 6px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-product__description:active {
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.1);
 }
 
 .catalog-product__title {
@@ -26,7 +63,7 @@
 .catalog-product__text {
   @include reset-indent;
   padding-top: 4px;
-  padding-bottom: 19px;
+  padding-bottom: 20px;
 
   @include font-regular (13px, 400, normal, 30px, $content-color);
 }
@@ -45,11 +82,6 @@
   width: 20px;
   height: 19px;
   font-size: 0;
-  background: {
-    image: url("../img/icon-cart.svg");
-    size: 20px 19px;
-    repeat: no-repeat;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -60,13 +92,18 @@
 
   .catalog-product__link {
     &--image {
-      flex-basis: 50%;
+      max-width: 50%;
     }
   }
 
   .catalog-product__description {
     flex-basis: 50%;
+    flex-grow: 1;
     box-sizing: border-box;
+  }
+
+  .catalog-product__image {
+    margin: 0;
   }
 
   .catalog-product__title {
@@ -80,10 +117,15 @@
 
   .catalog-product__text {
     margin-bottom: auto;
+    padding-bottom: 0;
     font-size: 15px;
   }
 
   .catalog-product__price {
+    padding-top: 21px;
+    padding-left: 2px;
+    padding-right: 3px;
+    margin-bottom: 3px;
     font-size: 18px;
   }
 }
@@ -92,7 +134,12 @@
   .catalog-product {
     min-height: 659px;
     flex-direction: column;
-    justify-content: space-between;
+  }
+
+  .catalog-product__link {
+    &--image {
+      max-width: 100%;
+    }
   }
 
   .catalog-product__image {
@@ -100,7 +147,13 @@
   }
 
   .catalog-product__description {
-    flex-basis: auto;
+    flex-basis: 197px;
+    padding: 25px 33px 25px 26px;
     box-sizing: border-box;
+  }
+
+  .catalog-product__price {
+    padding: 0;
+    padding-top: 20px;
   }
 }

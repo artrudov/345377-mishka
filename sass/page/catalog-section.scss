@@ -27,17 +27,27 @@
     border-top: 1px solid #dfdfdf;
   }
 
+  .catalog-section__header {
+    padding-bottom: 97px;
+    background: {
+      image: url("../img/bg-zigzag-fill.svg");
+      repeat: repeat-x;
+      position-y: bottom;
+      size: auto 19px;
+    }
+  }
+
   .catalog-section__title {
     padding-top: 34px;
     font-size: 43px;
   }
 
   .catalog-section__list {
-    padding: 62px 50px 52px;
+    padding: 40px 50px 52px;
   }
 
   .catalog-section__item {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 
     &:last-child {
       margin-bottom: 0;
@@ -51,6 +61,12 @@
     border-top: 1px solid #dfdfdf;
   }
 
+  .catalog-section__header {
+    background: {
+      size: auto 37px;
+    }
+  }
+
   .catalog-section__title {
     padding-top: 35px;
     padding-bottom: 38px;
@@ -58,7 +74,7 @@
   }
 
   .catalog-section__list {
-    padding: 100px 50px 52px;
+    padding: 79px 50px 52px;
     max-width: 1050px;
     margin: 0 auto;
     display: flex;

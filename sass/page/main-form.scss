@@ -2,6 +2,10 @@
   padding: 0 30px;
 }
 
+.main-form__row {
+  margin: 0;
+}
+
 .main-form__title {
   @include reset-indent;
   position: relative;
@@ -20,7 +24,7 @@
   }
 
   &--type {
-    padding: 12px 0 21px;
+    padding: 12px 0 6px;
 
     &::after {
       top: 19px;
@@ -28,15 +32,15 @@
   }
 
   &--color {
-    padding: 33px 0 21px;
+    padding: 15px 0 22px;
 
     &::after {
-      top: 40px;
+      top: 22px;
     }
   }
 
   &--full-name {
-    padding: 14px 0 6px;
+    padding: 13px 0 29px;
 
     &::after {
       top: 21px;
@@ -74,7 +78,35 @@ input[type="radio"] {
 }
 
 .main-form__label {
+  outline: 0;
+  display: block;
   @include font-bold (17px, 400, normal, 18px, $header-color);
+
+  &--first-name {
+    padding-bottom: 6px;
+  }
+
+  &--second-name {
+    padding-top: 22px;
+    padding-bottom: 4px;
+  }
+
+  &--middle-name {
+    padding-top: 22px;
+    padding-bottom: 4px;
+  }
+
+  &--phone {
+    display: none;
+  }
+
+  &--mail {
+    display: none;
+  }
+
+  &--additional {
+    display: none;
+  }
 }
 
 .main-form__label--radio {
@@ -98,12 +130,27 @@ input[type="radio"] {
 .main-form__label--radio::before {
   position: absolute;
   content: "";
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   border: 2px solid #444444;
   border-radius: 50%;
   left: 0;
   top: 3px;
+  box-sizing: border-box;
+}
+
+input[type="radio"]:checked + .main-form__label--radio::before {
+  padding: 8px;
+  background: {
+    color: #62d1ba;
+    repeat: no-repeat;
+    position: center;
+    clip: content-box;
+  }
+}
+
+.main-form__label:focus::before {
+  border-color: #62d1ba;
 }
 
 .main-form__label--checkbox::before {
@@ -116,18 +163,23 @@ input[type="radio"] {
   top: 3px;
 }
 
-.main-form__input::-webkit-input-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $form-color);
+input[type="checkbox"]:checked + .main-form__label--checkbox::before {
+  border-color: #62d1ba;
+  background: {
+    image: url("../img/sprite.svg#shape-tick-view");
+    size: 27px 17px;
+    repeat: no-repeat;
+    position: center;
+  }
 }
 
-.main-form__input::-moz-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $form-color);
+input:disabled + .main-form__label {
+  opacity: 0.3;
 }
 
-.main-form__input:-moz-placeholder {
-  @include font-regular (17px, 400, normal, 18px, $form-color);
-}
-
+.main-form__input::-webkit-input-placeholder,
+.main-form__input::-moz-placeholder,
+.main-form__input:-moz-placeholder,
 .main-form__input:-ms-input-placeholder {
   @include font-regular (17px, 400, normal, 18px, $form-color);
 }
@@ -140,22 +192,42 @@ input[type="radio"] {
   border-bottom: 2px solid #000000;
 
   @include font-regular (17px, 400, normal, 18px, $form-color);
+}
+
+.main-form__container {
+  position: relative;
+}
+
+.main-form__icon {
+  position: absolute;
+  opacity: 0.2;
 
   &--phone {
-    background: {
-      image: url("../img/icon-phone.svg");
-      repeat: no-repeat;
-      position: 99% 5px;
-    }
+    bottom: 18px;
+    right: 7px;
   }
 
   &--mail {
-    background: {
-      image: url("../img/icon-mail.svg");
-      repeat: no-repeat;
-      position: 99% 5px;
-    }
+    bottom: 10px;
+    right: 4px;
   }
+}
+
+.main-form__input:hover ~ .main-form__icon,
+.main-form__input:active ~ .main-form__icon,
+.main-form__input:focus ~ .main-form__icon {
+  fill: #62d1ba;
+  opacity: 1;
+}
+
+.main-form__input--phone:focus {
+  fill: #62d1ba;
+}
+
+.main-form__input:hover,
+.main-form__input:active,
+.main-form__input:focus {
+  border-color: #62d1ba;
 }
 
 .main-form__input--additional {
@@ -316,9 +388,9 @@ input[type="radio"] {
       padding-bottom: 58px;
 
       &::before {
-        width: 48px;
-        height: 48px;
-        top: -15px;
+        width: 52px;
+        height: 52px;
+        top: -17px;
       }
     }
 
@@ -356,6 +428,19 @@ input[type="radio"] {
       padding-right: 26px;
       margin-bottom: 49px;
     }
+  }
+
+  .main-form__label--radio::before {
+    width: 52px;
+    height: 53px;
+  }
+
+  input[type="radio"]:checked + .main-form__label--radio::before {
+    padding: 14px;
+  }
+
+  input[type="checkbox"]:checked + .main-form__label--checkbox::before {
+    background-size: 33px 23px;
   }
 
   .main-form__input {
@@ -412,6 +497,17 @@ input[type="radio"] {
 
     &--additional {
       padding-top: 15px;
+    }
+  }
+
+  .main-form__icon {
+
+    &--phone {
+      right: 26px;
+    }
+
+    &--mail {
+      right: 22px;
     }
   }
 
@@ -501,6 +597,17 @@ input[type="radio"] {
     &--mail {
       padding-top: 11px;
       padding-left: 61px;
+    }
+  }
+
+  .main-form__icon {
+
+    &--phone {
+      right: 183px;
+    }
+
+    &--mail {
+      right: 179px;
     }
   }
 

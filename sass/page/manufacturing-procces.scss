@@ -11,6 +11,37 @@
   border: 1px solid #ececec;
 }
 
+.manufacturing-procces__video {
+  position: relative;
+  margin: 0 auto;
+}
+
+.manufacturing-procces__button {
+  font-size: 0;
+}
+
+.manufacturing-procces__icon-play {
+  position: absolute;
+  left: 79px;
+  top: 37px;
+  cursor: pointer;
+}
+
+.manufacturing-procces__icon-play:hover {
+  width: 121px;
+  height: 92px;
+  left: 70px;
+  top: 30px;
+}
+
+.manufacturing-procces__icon-play:active {
+  width: 101px;
+  height: 77px;
+  left: 79px;
+  top: 37px;
+  opacity: 0.8;
+}
+
 .manufacturing-procces__title {
   @include reset-indent;
   position: relative;
@@ -27,7 +58,7 @@
     top: 29px;
     left: -56px;
     background: {
-      image: url("../img/icon-video.svg");
+      image: url("../img/sprite.svg#shape-video-view");
       size: 32px 32px;
       repeat: no-repeat;
     }
@@ -36,7 +67,7 @@
 
 .manufacturing-procces__description {
   @include reset-indent;
-  padding: 28px 33px 25px;
+  padding: 7px 33px 25px;
 
   @include font-regular (13px, 400, normal, 24px, $content-color);
 }
@@ -63,12 +94,12 @@
 
   .manufacturing-procces__title {
     width: auto;
-    padding: 39px 10px 0 105px;
+    padding: 17px 10px 0 105px;
     font-size: 20px;
     order: 2;
 
     &::before {
-      top: 34px;
+      top: 12px;
       left: 40px;
     }
   }
@@ -76,6 +107,21 @@
   .manufacturing-procces__image {
     height: 454px;
     order: 1;
+  }
+
+  .manufacturing-procces__icon-play {
+    left: 282px;
+    top: 185px;
+  }
+
+  .manufacturing-procces__icon-play:hover {
+    left: 270px;
+    top: 175px;
+  }
+
+  .manufacturing-procces__icon-play:active {
+    left: 282px;
+    top: 185px;
   }
 
   .manufacturing-procces__description {
@@ -115,6 +161,21 @@
     }
   }
 
+  .manufacturing-procces__icon-play {
+    left: 290px;
+    top: 50px;
+  }
+
+  .manufacturing-procces__icon-play:hover {
+    left: 278px;
+    top: 40px;
+  }
+
+  .manufacturing-procces__icon-play:active {
+    left: 290px;
+    top: 50px;
+  }
+
   .manufacturing-procces__image {
     float: left;
     margin-top: -144px;
@@ -124,6 +185,7 @@
   .manufacturing-procces__description {
     width: 230px;
     margin-left: 720px;
+    padding-top: 17px;
     padding-bottom: 46px;
   }
 

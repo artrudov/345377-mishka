@@ -14,9 +14,18 @@
   display: none;
 }
 
+.main-footer__link--logo:hover {
+  fill: #46c1ae;
+}
+
+.main-footer__link--logo:active {
+  fill: #46c1ae;
+  opacity: 0.3;
+}
+
 .main-footer__social {
   margin: 0 30px;
-  padding: 22px 0 28px;
+  padding: 25px 0 28px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -35,21 +44,24 @@
 
   @include font-bold (19px, 400, normal, 18px, $header-color);
   text-decoration: none;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 35px;
-    right: -56px;
-    top: -1px;
-
-    background: {
-      image: url("../img/logo-htmlacademy.svg");
-      repeat: no-repeat;
-    }
-  }
 }
+
+.main-footer__icon {
+  position: absolute;
+  right: -55px;
+  top: 0;
+  fill: #63d1bb;
+}
+
+.main-footer__link--copyright:hover > .main-footer__icon {
+  fill: #46c1ae;
+}
+
+.main-footer__link--copyright:active,
+.main-footer__link--copyright:active > .main-footer__icon {
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) {
   .main-footer {
@@ -70,24 +82,24 @@
 
     border: none;
     margin-top: 5px;
-    margin-left: 97px;
+    margin-left: 84px;
   }
 
   .main-footer__copyright {
     @include reset-indent;
   }
 
+  .main-footer__description {
+    padding-top: 5px;
+  }
+
   .main-footer__link--copyright {
     padding-right: 55px;
-
-    &::after {
-      right: 0;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .main-header__contaoner {
+  .main-header__container {
     padding: 52px 100px 50px;
   }
 }

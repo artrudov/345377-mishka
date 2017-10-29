@@ -18,11 +18,14 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    position: relative;
     background-color: #f9f9f9;
+
+    &--index {
+      position: relative;
+    }
   }
 
-  .main-header::before {
+  .main-header--index::before {
     position: absolute;
     content: "";
     width: 100%;

@@ -30,12 +30,24 @@
     display: block;
   }
 
-  &--form {
+  &--search {
     display: block;
   }
 
   &--cart {
     display: block;
+  }
+}
+
+.main-navigation__link {
+  position: relative;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -67,40 +79,32 @@
   &--cart {
     margin-left: 12px;
     padding: 27px 0 28px;
-    position: relative;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 21px;
-      height: 23px;
-      margin-left: -45px;
-      opacity: 0.3;
-      background: {
-        image: url("../img/icon-cart.svg");
-        size: 21px 18px;
-        repeat: no-repeat;
-        position: 0 4px;
-      }
-    }
   }
 }
 
-.main-navigation__label {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-navigation__input {
-  display: none;
-}
-
 .main-navigation__icon {
-  margin-top: 3px;
-  margin-right: 58px;
-  margin-left: -77px;
+  position: absolute;
+  opacity: 0.3;
+
+  &--search {
+    top: 30px;
+    left: 73px;
+  }
+
+  &--cart {
+    top: 30px;
+    left: 25px;
+  }
+}
+
+.main-navigation__link:hover > svg {
+  fill: #63d1bb;
+  opacity: 1;
+}
+
+.main-navigation__link:active > svg {
+  fill: #63d1bb;
+  opacity: 0.3;
 }
 
 .main-navigation__button {
@@ -112,11 +116,9 @@
   height: 14px;
   font-size: 0;
   border: none;
-  background: {
-    image: url("../img/icon-menu-open.svg");
-    color: #ffffff;
-    size: 20px 14px;
-    repeat: no-repeat;
+
+  &--close {
+    display: none;
   }
 }
 
@@ -150,7 +152,7 @@
       order: 5;
     }
 
-    &--form {
+    &--search {
       display: block;
       width: 82px;
       margin-left: auto;
@@ -211,8 +213,16 @@
 
   .main-navigation__icon {
     margin: 0;
-    margin-top: 23px;
-    opacity: 0.3;
+
+    &--search {
+      top: 35px;
+      left: 31px;
+    }
+
+    &--cart {
+      top: 35px;
+      left: 31px;
+    }
   }
 
   .main-navigation__button {
@@ -250,7 +260,7 @@
       order: 2;
     }
 
-    &--form {
+    &--search {
       width: 84px;
       order: 4;
     }
@@ -280,6 +290,7 @@
   }
 
   .main-navigation__link {
+    position: relative;
     padding: 0;
 
     &--catalog {
@@ -300,18 +311,8 @@
     }
 
     &--cart {
-      padding-top: 33px;
+      padding-top: 32px;
       padding-right: 2px;
-
-      &::before {
-        top: 32px;
-        left: 81px;
-        opacity: 0.3;
-      }
     }
-  }
-
-  .main-navigation__icon {
-    margin-top: 38px;
   }
 }
