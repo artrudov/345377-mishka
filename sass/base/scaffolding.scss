@@ -46,7 +46,6 @@ img {
   }
 }
 
-
 .visually-hidden {
   display: none;
 }
@@ -56,4 +55,14 @@ img {
   margin-left: -1px;
 
   @include font-bold (25px, 400, normal, 30px, #000000);
+}
+
+.modal {
+  position: fixed;
+  top: 120px;
+  z-index: 10;
+}
+
+.modal-show {
+  display: block
 }

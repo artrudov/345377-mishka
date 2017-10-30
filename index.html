@@ -28,14 +28,20 @@
               <img src="img/logo-mobile.svg" alt="MISHKA" class="main-navigation__image">
             </picture>
           </a>
-          <button type="button" class="button main-navigation__button main-navigation__button--open active">
+          <button type="button" class="button main-navigation__button main-navigation__button--open">
+            <!-- При закрытом меню у модификатора open значение display устанавливается block
+                 При закрытом меню у модификатора close значение display устанавливается none
+            -->
             Открыть меню
             <svg class="main-navigation__icon main-navigation__icon" width="20" height="14">
               <use xlink:href="#icon-menu-open"></use>
             </svg>
           </button>
           <button type="button" class="button main-navigation__button main-navigation__button--close">
-            Открыть меню
+            <!-- При открытом меню у модификатора open значение display устанавливается none
+                 При открытом меню у модификатора close значение display устанавливается block
+            -->
+            Закрыть меню
             <svg class="main-navigation__icon" width="20" height="14">
               <use xlink:href="#icon-menu-close"></use>
             </svg>
@@ -51,7 +57,7 @@
         </li>
 
         <li class="main-navigation__item main-navigation__item--search">
-          <a class="main-navigation__link main-navigation__link--search">
+          <a href="search.html" class="main-navigation__link main-navigation__link--search">
             <svg class="main-navigation__icon main-navigation__icon--search" width="18" height="20">
               <use xlink:href="#icon-search"></use>
             </svg>
@@ -59,7 +65,7 @@
         </li>
 
         <li class="main-navigation__item main-navigation__item--cart">
-          <a href="#" class="main-navigation__link main-navigation__link--cart">
+          <a href="order.html" class="main-navigation__link main-navigation__link--cart">
             <svg class="main-navigation__icon main-navigation__icon--cart" width="20" height="19">
               <use xlink:href="#icon-cart"></use>
             </svg>
@@ -67,11 +73,11 @@
         </li>
 
         <li class="main-navigation__item main-navigation__item--new">
-          <a href="catalog.html" class="main-navigation__link main-navigation__link--new">Новые поступления</a>
+          <a href="new.html" class="main-navigation__link main-navigation__link--new">Новые поступления</a>
         </li>
 
         <li class="main-navigation__item main-navigation__item--sales">
-          <a href="form.html" class="main-navigation__link main-navigation__link--sales">Распродажа</a>
+          <a href="sales.html" class="main-navigation__link main-navigation__link--sales">Распродажа</a>
         </li>
 
         <li class="main-navigation__item main-navigation__item--delivery">Бесплатная доставка по России</li>
@@ -81,23 +87,23 @@
 
     <section class="main-header__content">
       <h1 class="visually-hidden">Интернет магазин "Мишка"</h1>
-        <p class="main-header__caption">
-          Милые штуки ручной<br> работы для дома
-        </p>
+      <p class="main-header__caption">
+        Милые штуки ручной<br> работы для дома
+      </p>
     </section>
 
     <section class="features">
       <h2 class="visually-hidden">Мы создаем</h2>
       <ul class="features__list">
         <li class="features__item">
-          <a href="#" class="features__link features__link--interior"><span>Предметы интерьера</span>
+          <a href="iterior.html" class="features__link features__link--interior"><span>Предметы интерьера</span>
             <svg class="features__icon features__icon--interior" width="40" height="62">
               <use xlink:href="#icon-interior"></use>
             </svg>
           </a>
         </li>
         <li class="features__item">
-          <a href="#" class="features__link features__link--toys"><span>Детские игрушки</span>
+          <a href="toys.html" class="features__link features__link--toys"><span>Детские игрушки</span>
             <svg class="features__icon features__icon--toys" width="60" height="60">
               <use xlink:href="#icon-toy"></use>
             </svg>
@@ -139,7 +145,7 @@
           <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" class="promo__image" alt="Промо изображение">
         </picture>
         <p class="promo__price">Цена: 990 руб.</p>
-        <a href="#" class="button button--effect promo__button">Заказать</a>
+        <a href="order.html" class="button button--buy button--effect promo__button">Заказать</a>
       </div>
     </section>
 
@@ -156,35 +162,39 @@
             <svg class="about__icon about__icon--flower" width="32" height="37">
               <use xlink:href="#icon-feature-flower"></use>
             </svg>
-            <p class="about__text about__text--flower">Экологически чистые материалы</p></li>
+            <p class="about__text about__text--flower">Экологически чистые материалы</p>
+          </li>
           <li class="about__item about__item--price">
             <svg class="about__icon about__icon--price" width="47" height="27">
               <use xlink:href="#icon-feature-money"></use>
             </svg>
-            <p class="about__text about__text--price">Скандинавский стиль по российской цене</p></li>
+            <p class="about__text about__text--price">Скандинавский стиль по российской цене</p>
+          </li>
           <li class="about__item about__item--heart">
             <svg class="about__icon about__icon--heart" width="35" height="28">
               <use xlink:href="#icon-feature-heart"></use>
             </svg>
-            <p class="about__text about__text--heart">Увеличивает лайки на фотографиях</p></li>
-        </ul>
+            <p class="about__text about__text--heart">Увеличивает лайки на фотографиях</p>
+          </li>
 
-        <ul class="about__list">
           <li class="about__item about__item--ball">
             <svg class="about__icon about__icon--ball" width="34" height="34">
               <use xlink:href="#icon-feature-ball"></use>
             </svg>
-            <p class="about__text about__text--ball">Связано вручную с любовью и умилением</p></li>
+            <p class="about__text about__text--ball">Связано вручную с любовью и умилением</p>
+          </li>
           <li class="about__item about__item--domestic">
             <svg class="about__icon about__icon--domestic" width="54" height="23">
               <use xlink:href="#icon-feature-rocket"></use>
             </svg>
-            <p class="about__text about__text--domestic">Поддержка отечественного производителя</p></li>
+            <p class="about__text about__text--domestic">Поддержка отечественного производителя</p>
+          </li>
           <li class="about__item about__item--gift">
             <svg class="about__icon about__icon--gift" width="32" height="32">
               <use xlink:href="#icon-feature-gift"></use>
             </svg>
-            <p class="about__text about__text--gift">Поставляется в подарочной упаковке</p></li>
+            <p class="about__text about__text--gift">Поставляется в подарочной упаковке</p>
+          </li>
         </ul>
 
       </div>
@@ -218,7 +228,7 @@
             </button>
         </div>
 
-        <a href="#" class="button button--effect feedback__control-link">Написать</a>
+        <a href="feedback.html" class="button button--effect feedback__control-link">Написать</a>
       </div>
     </section>
 
@@ -244,14 +254,14 @@
       <div class="contacts__map">
         <iframe class="contacts__frame-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894615906916!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506514368287"
           allowfullscreen></iframe>
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" class="contacts__image" alt="Карта с указанием расположения организации">
-          </picture>
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" class="contacts__image" alt="Карта с указанием расположения организации">
+        </picture>
       </div>
       <footer class="contacts__footer">
-        <a href="#" class="button button--effect contacts__button contacts__button--link">Напишите нам</a>
+        <a href="contacts.html" class="button button--effect contacts__button contacts__button--link">Напишите нам</a>
       </footer>
     </section>
 
@@ -333,9 +343,17 @@
       </ul>
 
       <button class="button modal-cart__button">Добавить</button>
+
+      <button type="button" class="button modal-cart__button modal-cart__button--close">
+        Закрыть окно
+        <svg class="modal-cart__icon" width="40" height="30">
+          <use xlink:href="#icon-menu-close"></use>
+        </svg>
+      </button>
     </form>
   </section>
 
+  <script src="js/modal.js"></script>
   <script src="js/svguse.min.js"></script>
   <script src="js/picturefill.min.js"></script>
 </body>

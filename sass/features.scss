@@ -100,4 +100,15 @@
   .features__link {
     padding: 28px 0 47px 36px;
   }
+
+  .features-icon {
+    &--interior {
+      top: 31px;
+    }
+
+    &--toys {
+      top: 32px;
+      right: 36px;
+    }
+  }
 }

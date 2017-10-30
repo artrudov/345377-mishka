@@ -1,9 +1,15 @@
 .modal-cart {
+  display: none;
   padding: 0 30px 47px;
   border-top: 1px solid #c7c7c7;
   border-bottom: 1px solid #c7c7c7;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  background-color: #ffffff;
   text-align: center;
+
+  &--show {
+    display: block;
+  }
 }
 
 .modal-cart__title {
@@ -64,23 +70,40 @@ input[type="radio"]:checked ~ .modal-cart__label {
 
   @include font-bold (17px, 400, normal, 16px, $additional-color);
   text-transform: uppercase;
+
+    &--close {
+      position: absolute;
+      width: 40px;
+      background-color: #ffffff;
+      padding: 0;
+      font-size: 0;
+      top: 10px;
+      right: 15px;
+    }
 }
 
 .modal-cart__button:hover {
   background-color: #46c1ae;
 }
 
+.modal-cart__button--close:hover,
+.modal-cart__button--close:active {
+  background-color: #fff;
+}
+
 @media (min-width: $tablet-width) {
   .modal-cart {
-    max-width: 349px;
-    margin: 0 auto;
+    max-width: 569px;
+    left: 50%;
+    margin-left: -283px;
     padding: 0 110px 47px;
+    box-sizing: border-box;
   }
 
   .modal-cart__title {
     padding: 0;
     padding-top: 47px;
-    font-size: 30;
+    font-size: 30px;
     line-height: 57px;
   }
 
