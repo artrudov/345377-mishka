@@ -1,6 +1,6 @@
 .about {
   max-width: 1050px;
-  padding: 34px 30px 30px;
+  padding: 22px 30px 16px;
   margin: 0 auto;
 }
 
@@ -22,32 +22,32 @@
   @include font-bold (17px, 400, normal, 20px, $header-color);
 
   &--flower {
-    padding-top: 54px;
+    padding-top: 31px;
     width: 180px;
   }
 
   &--price {
-    padding-top: 46px;
+    padding-top: 17px;
     width: 200px;
   }
 
   &--heart {
-    padding-top: 55px;
+    padding-top: 24px;
     width: 180px;
   }
 
   &--ball {
-    padding-top: 55px;
+    padding-top: 19px;
     width: 220px;
   }
 
   &--domestic {
-    padding-top: 44px;
+    padding-top: 11px;
     width: 260px;
   }
 
   &--gift {
-    padding-top: 55px;
+    padding-top: 24px;
     width: 220px;
   }
 }
@@ -115,12 +115,12 @@
   }
 
   &--domestic {
-    padding-top: 21px;
+    padding-top: 23px;
     padding-bottom: 7px;
   }
 
   &--gift {
-    padding-top: 16px;
+    padding-top: 14px;
     padding-bottom: 13px;
   }
 }
@@ -150,26 +150,32 @@
     line-height: 22px;
 
     &--flower {
+      padding-top: 53px;
       width: 220px;
     }
 
     &--price {
+      padding-top: 46px;
       width: 240px;
     }
 
     &--heart {
+      padding-top: 56px;
       width: 240px;
     }
 
     &--ball {
+      padding-top: 56px;
       width: 250px;
     }
 
     &--domestic {
+      padding-top: 42px;
       width: 300px;
     }
 
     &--gift {
+      padding-top: 56px;
       width: 260px;
     }
   }
@@ -207,7 +213,7 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    padding: 27px 0 77px;
+    padding: 27px 0 74px;
   }
 
   .about__title {
