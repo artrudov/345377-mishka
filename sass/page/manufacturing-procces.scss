@@ -1,7 +1,7 @@
 .manufacturing-procces {
   max-width: 1050px;
   margin: 0 auto;
-  padding: 0 30px 60px;
+  padding: 0 30px 57px;
 }
 
 .manufacturing-procces__container {
@@ -49,20 +49,13 @@
   padding: 24px 0;
 
   @include font-bold (17px, 400, normal, 24px, $header-color);
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 32px;
-    height: 32px;
-    top: 29px;
-    left: -56px;
-    background: {
-      image: url("../img/sprite.svg#shape-video-view");
-      size: 32px 32px;
-      repeat: no-repeat;
-    }
-  }
+.manufacturing-procces__icon-title {
+  position: absolute;
+  top: 29px;
+  left: -56px;
+  fill: #63d1bb;
 }
 
 .manufacturing-procces__description {
@@ -97,11 +90,11 @@
     padding: 17px 10px 0 105px;
     font-size: 20px;
     order: 2;
+  }
 
-    &::before {
-      top: 12px;
-      left: 40px;
-    }
+  .manufacturing-procces__icon-title {
+    top: 12px;
+    left: 40px;
   }
 
   .manufacturing-procces__image {
@@ -141,24 +134,23 @@
 @media (min-width: $desktop-width) {
   .manufacturing-procces {
     padding-top: 0;
-    padding-bottom: 102px;
+    padding-bottom: 104px;
   }
 
   .manufacturing-procces__container {
     display: block;
-    min-height: 457px;
     padding: 0;
   }
 
   .manufacturing-procces__title {
     width: 230px;
     margin-left: 655px;
-    padding-top: 97px;
+    padding-top: 93px;
+  }
 
-    &::before {
-      top: 42px;
-      left: 107px;
-    }
+  .manufacturing-procces__icon-title {
+    top: 42px;
+    left: 107px;
   }
 
   .manufacturing-procces__icon-play {
@@ -178,19 +170,20 @@
 
   .manufacturing-procces__image {
     float: left;
-    margin-top: -144px;
+    margin-top: -141px;
     width: 682px;
   }
 
   .manufacturing-procces__description {
     width: 230px;
     margin-left: 720px;
-    padding-top: 17px;
-    padding-bottom: 46px;
+    padding-top: 20px;
+    padding-bottom: 43px;
   }
 
   .manufacturing-procces__link {
     margin-left: 760px;
+    margin-bottom: 60px;
     width: 230px;
   }
 }
