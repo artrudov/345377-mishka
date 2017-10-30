@@ -71,15 +71,15 @@ input[type="radio"]:checked ~ .modal-cart__label {
   @include font-bold (17px, 400, normal, 16px, $additional-color);
   text-transform: uppercase;
 
-    &--close {
-      position: absolute;
-      width: 40px;
-      background-color: #ffffff;
-      padding: 0;
-      font-size: 0;
-      top: 10px;
-      right: 15px;
-    }
+  &--close {
+    position: absolute;
+    width: 40px;
+    background-color: #ffffff;
+    padding: 0;
+    font-size: 0;
+    top: 10px;
+    right: 15px;
+  }
 }
 
 .modal-cart__button:hover {
@@ -88,7 +88,7 @@ input[type="radio"]:checked ~ .modal-cart__label {
 
 .modal-cart__button--close:hover,
 .modal-cart__button--close:active {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {

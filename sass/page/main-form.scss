@@ -601,9 +601,9 @@ input:disabled + .main-form__label {
     padding-top: 3px;
     padding-bottom: 56px;
 
-      &::before {
-        top: -11px;
-      }
+    &::before {
+      top: -11px;
+    }
   }
 
   .main-form__input--mail {
