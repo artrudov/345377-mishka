@@ -303,7 +303,7 @@ input:disabled + .main-form__label {
     &--additional {
       max-width: 1050px;
       margin: 0 auto;
-      padding-top: 49px;
+      padding-top: 51px;
       padding-bottom: 38px;
     }
   }
@@ -360,7 +360,7 @@ input:disabled + .main-form__label {
     }
 
     &--color {
-      padding-top: 7px;
+      padding-top: 9px;
     }
 
     &--full-name {
@@ -391,21 +391,21 @@ input:disabled + .main-form__label {
       &::before {
         width: 52px;
         height: 52px;
-        top: -17px;
+        top: -14px;
       }
     }
 
     &--checkbox {
       flex-basis: 238px;
-      padding-top: 4px;
+      padding-top: 6px;
       padding-left: 80px;
-      padding-bottom: 54px;
+      padding-bottom: 52px;
       box-sizing: border-box;
 
       &::before {
-        width: 48px;
+        width: 50px;
         height: 48px;
-        top: -11px;
+        top: -9px;
       }
     }
 
@@ -508,7 +508,7 @@ input:disabled + .main-form__label {
 
   .main-form__button {
     width: 230px;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
   }
 
   .main-form__attention {
@@ -526,6 +526,7 @@ input:disabled + .main-form__label {
 
     &--color {
       padding-top: 62px;
+      padding-bottom: 14px;
     }
 
     &--full-name {
@@ -534,12 +535,12 @@ input:disabled + .main-form__label {
     }
 
     &--mail {
-      padding-bottom: 50px;
+      padding-bottom: 52px;
       margin-top: -1px;
     }
 
     &--additional {
-      padding: 49px 175px 35px 0;
+      padding: 51px 175px 32px 0;
       box-sizing: border-box;
     }
   }
@@ -595,6 +596,20 @@ input:disabled + .main-form__label {
     }
   }
 
+  .main-form__label--checkbox {
+    flex-basis: 263px;
+    padding-top: 3px;
+    padding-bottom: 56px;
+
+      &::before {
+        top: -11px;
+      }
+  }
+
+  .main-form__input--mail {
+    padding-top: 3px;
+  }
+
   .main-form__icon {
     &--phone {
       right: 183px;
@@ -603,14 +618,5 @@ input:disabled + .main-form__label {
     &--mail {
       right: 179px;
     }
-  }
-
-  .main-form__label--checkbox {
-    flex-basis: 263px;
-    padding-top: 3px;
-  }
-
-  .main-form__input--mail {
-    padding-top: 3px;
   }
 }
