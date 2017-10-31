@@ -39,7 +39,7 @@
 .promo__description {
   @include reset-indent;
   padding-top: 24px;
-  padding-bottom: 18px;
+  padding-bottom: 23px;
 
   @include font-regular (15px, 400, normal, 24px, $content-color);
 }
@@ -167,8 +167,8 @@
   }
 
   .promo__description {
-    padding-top: 28px;
-    padding-bottom: 48px;
+    padding-top: 31px;
+    padding-bottom: 51px;
     font-size: 17px;
     line-height: 30px;
   }

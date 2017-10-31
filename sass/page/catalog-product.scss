@@ -54,6 +54,7 @@
 .catalog-product__title {
   @include reset-indent;
   @include font-bold (17px, 400, normal, 24px, $header-color);
+  text-transform: none;
 }
 
 .catalog-product__text {
