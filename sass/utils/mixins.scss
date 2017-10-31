@@ -26,13 +26,3 @@
   line-height: $line;
   color: $color;
 }
-
-/// Волнистый разделитель секций
-@mixin background-wave {
-  background: {
-    // Исправить наименование файла
-    repeat: repeat-x;
-    size: 320px 7px;
-    position: bottom;
-  }
-}

@@ -23,19 +23,12 @@
   position: relative;
 }
 
-.contacts__map--icon {
+.contacts__map-pin {
   position: absolute;
-  content: "";
   width: 66px;
   height: 101px;
   top: 144px;
   left: 138px;
-
-  background: {
-    image: url("../img/sprite.svg#shape-map-pin-view");
-    size: 66px 101px;
-    repeat: no-repeat;
-  }
 }
 
 .contacts__frame-map {
@@ -145,7 +138,7 @@
     }
   }
 
-  .contacts__map::before {
+  .contacts__map-pin {
     top: 141px;
     left: 364px;
   }
@@ -188,7 +181,7 @@
     float: right;
   }
 
-  .contacts__map::before {
+  .contacts__map-pin {
     top: 146px;
     left: 241px;
   }
