@@ -40,17 +40,17 @@ gulp.task("serve", function() {
 });
 
 gulp.task("images", function () {
-  return gulp.src("img/**/*.{png, jpg, svg}")
+  return gulp.src("img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
         imagemin.optipng({optimizaionLevel: 3}),
         imagemin.jpegtran({progresive: true}),
         imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("img"));
 });
 
 gulp.task("webp", function () {
-  return gulp.src("img/*.{png, jpg}")
+  return gulp.src("img/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("build/img"));
 });
