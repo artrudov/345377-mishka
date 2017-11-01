@@ -27,7 +27,7 @@
   }
 
   &--price {
-    padding-top: 17px;
+    padding-top: 19px;
     width: 200px;
   }
 
@@ -120,7 +120,7 @@
   }
 
   &--gift {
-    padding-top: 14px;
+    padding-top: 15px;
     padding-bottom: 13px;
   }
 }
@@ -131,8 +131,8 @@
   }
 
   .about__title {
-    padding-top: 48px;
-    padding-bottom: 5px;
+    padding-top: 45px;
+    padding-bottom: 6px;
     margin-left: -5px;
     font-size: 43px;
   }
@@ -164,7 +164,7 @@
     }
 
     &--heart {
-      padding-top: 58px;
+      padding-top: 56px;
       order: 5;
     }
 
@@ -174,14 +174,18 @@
     }
 
     &--domestic {
-      padding-top: 44px;
+      padding-top: 42px;
       order: 4;
     }
 
     &--gift {
-      padding-top: 56px;
+      padding-top: 55px;
       order: 6;
     }
+  }
+
+  .about__icon--domestic {
+    margin-left: -12px;
   }
 
   .about__text {
@@ -193,13 +197,13 @@
 
     &--price {
       width: 240px;
-      padding-top: 23px;
+      padding-top: 21px;
       padding-bottom: 5px;
     }
 
     &--heart {
       width: 240px;
-      padding-top: 13px;
+      padding-top: 14px;
       padding-bottom: 13px;
     }
 
@@ -217,7 +221,7 @@
 
     &--gift {
       width: 260px;
-      padding-top: 16px;
+      padding-top: 15px;
       padding-bottom: 13px;
     }
   }
@@ -229,7 +233,7 @@
   }
 
   .about__title {
-    padding-top: 46px;
+    padding-top: 47px;
     padding-bottom: 10px;
     padding-left: 172px;
     margin-left: 0;
@@ -241,6 +245,15 @@
     padding: 0 175px;
   }
 
+  .about__text {
+    &--domestic {
+      padding-top: 42px;
+    }
+
+    &--gift {
+      padding-top: 54px;
+    }
+  }
 
   .about__text {
     &--flower {
@@ -248,11 +261,11 @@
     }
 
     &--price {
-      padding-top: 23px;
+      padding-top: 21px;
     }
 
     &--domestic {
-      padding-top: 22px;
+      padding-top: 23px;
     }
 
     &--heart {

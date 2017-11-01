@@ -79,14 +79,14 @@
     line-height: 30px;
   }
 
-  .features-icon {
+  .features__icon {
     &--interior {
       top: 30px;
     }
 
     &--toys {
-      top: 31px;
-      right: 34px;
+      top: 33px;
+      right: 35px;
     }
   }
 }
@@ -98,10 +98,10 @@
   }
 
   .features__link {
-    padding: 28px 0 47px 36px;
+    padding: 26px 0 47px 36px;
   }
 
-  .features-icon {
+  .features__icon {
     &--interior {
       top: 31px;
     }

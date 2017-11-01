@@ -81,7 +81,7 @@
   display: block;
   width: 100%;
   padding: 14px 0;
-  margin-top: 38px;
+  margin-top: 37px;
   border: 2px solid #444444;
 
   @include font-bold (18px, 400, normal, 20px, $content-color);
@@ -102,7 +102,7 @@
     position: relative;
     font-size: 43px;
     padding-top: 17px;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     margin-left: -5px;
   }
 
@@ -155,7 +155,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     max-width: 1050px;
-    padding: 53px 50px 46px;
+    padding: 53px 50px 48px;
     margin: 0 auto;
   }
 
@@ -165,7 +165,7 @@
 
   .contacts__title {
     padding-top: 104px;
-    padding-bottom: 62px;
+    padding-bottom: 56px;
     padding-left: 175px;
     font-size: 53px;
   }

@@ -48,7 +48,7 @@
 
 .main-footer__icon {
   position: absolute;
-  right: -55px;
+  right: -53px;
   top: -3px;
   fill: #63d1bb;
 }
@@ -98,7 +98,11 @@
   }
 
   .main-footer__link--copyright {
-    padding-right: 55px;
+    padding-right: 58px;
+  }
+
+  .main-footer__icon {
+    right: 5px;
   }
 }
 
@@ -106,4 +110,5 @@
   .main-header__container {
     padding: 52px 100px 50px;
   }
+
 }
