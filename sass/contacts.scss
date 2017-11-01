@@ -42,7 +42,7 @@
 }
 
 .contacts__data {
-  padding: 26px 30px 37px;
+  padding: 27px 30px 37px;
 }
 
 .contacts__row {
@@ -51,7 +51,7 @@
   flex-wrap: nowrap;
 
   &--first {
-    padding-bottom: 29px;
+    padding-bottom: 30px;
   }
 }
 
@@ -64,6 +64,7 @@
   }
 
   &--underline {
+    line-height: 29px;
     border-bottom: 1px solid #62d1ba;
   }
 
@@ -83,7 +84,7 @@
   margin-top: 38px;
   border: 2px solid #444444;
 
-  @include font-bold (17px, 400, normal, 20px, $content-color);
+  @include font-bold (18px, 400, normal, 20px, $content-color);
   text-align: center;
   text-decoration: none;
 }
@@ -197,7 +198,7 @@
   }
 
   .contacts__footer {
-    padding: 30px 0 60px;
+    padding: 32px 0 58px;
     width: auto;
   }
 

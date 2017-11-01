@@ -38,8 +38,8 @@
 
 .promo__description {
   @include reset-indent;
-  padding-top: 24px;
-  padding-bottom: 23px;
+  padding-top: 26px;
+  padding-bottom: 19px;
 
   @include font-regular (15px, 400, normal, 24px, $content-color);
 }
@@ -49,7 +49,7 @@
 }
 
 .promo__table-cell {
-  padding-top: 7px;
+  padding-top: 8px;
   padding-bottom: 8px;
   vertical-align: middle;
 }
@@ -64,7 +64,7 @@
 
 .promo__price {
   @include reset-indent;
-  padding-top: 19px;
+  padding-top: 17px;
   padding-bottom: 25px;
 
   @include font-bold (17px, 400, normal, 24px, $content-color);
@@ -113,8 +113,8 @@
   }
 
   .promo__description {
-    width: 300px;
-    padding-bottom: 40px;
+    width: 298px;
+    padding-bottom: 37px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -129,7 +129,7 @@
     width: 300px;
     margin-left: -7px;
     padding-top: 56px;
-    padding-bottom: 35px;
+    padding-bottom: 33px;
     font-size: 20px;
   }
 
@@ -168,7 +168,7 @@
 
   .promo__description {
     padding-top: 31px;
-    padding-bottom: 51px;
+    padding-bottom: 49px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -181,5 +181,6 @@
 
   .promo__price {
     padding-top: 110px;
+    margin-left: -4px;
   }
 }

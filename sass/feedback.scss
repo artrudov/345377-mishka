@@ -34,7 +34,7 @@
 .feedback__autor-contact {
   @include reset-indent;
   display: block;
-  padding-top: 2px;
+  padding-top: 3px;
   padding-bottom: 30px;
 
   @include font-regular (17px, 400, normal, 30px, $content-color);
