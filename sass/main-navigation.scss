@@ -92,6 +92,10 @@
     top: 30px;
     left: 25px;
   }
+
+  &--menu {
+    opacity: 1;
+  }
 }
 
 .main-navigation__link:hover > svg {
@@ -112,7 +116,6 @@
   height: 14px;
   font-size: 0;
   border: none;
-  opacity: 1;
 
   &--open {
     display: block;
