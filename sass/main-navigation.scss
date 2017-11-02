@@ -112,9 +112,10 @@
   height: 14px;
   font-size: 0;
   border: none;
+  opacity: 1;
 
   &--open {
-    display: none;
+    display: block;
   }
 
   &--close {
