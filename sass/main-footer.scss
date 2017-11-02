@@ -91,6 +91,7 @@
 
   .main-footer__icon {
     top: -1px;
+    right: 5px;
   }
 
   .main-footer__description {
@@ -100,15 +101,10 @@
   .main-footer__link--copyright {
     padding-right: 58px;
   }
-
-  .main-footer__icon {
-    right: 5px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .main-header__container {
     padding: 52px 100px 50px;
   }
-
 }
