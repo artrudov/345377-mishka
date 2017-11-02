@@ -32,7 +32,6 @@
 .main-footer__copyright {
   padding: 28px 0;
   align-self: center;
-  margin-left: -58px;
 }
 
 .main-footer__description {
@@ -42,6 +41,7 @@
 .main-footer__link--copyright {
   position: relative;
   display: block;
+  padding-right: 58px;
 
   @include font-bold (19px, 400, normal, 18px, $header-color);
   text-decoration: none;
