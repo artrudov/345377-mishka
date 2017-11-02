@@ -17,25 +17,25 @@
   text-align: center;
 
   &--logo {
-    display: block;
+    display: inline-block;
     position: relative;
     border-top: 1px solid #ececec;
   }
 
   &--catalog {
-    display: none;
+    display: block;
   }
 
   &--individual {
-    display: none;
+    display: block;
   }
 
   &--search {
-    display: none;
+    display: block;
   }
 
   &--cart {
-    display: none;
+    display: block;
   }
 }
 
@@ -124,7 +124,7 @@
 
 @media (min-width: $tablet-width) {
   .main-navigation__list {
-    max-width: 795px;
+    width: 670px;
     margin: 0 auto;
     padding: 0 50px;
     flex-direction: row;
@@ -137,23 +137,25 @@
     text-align: left;
 
     &--logo {
-      flex-basis: 320px;
+      min-width: 320px;
       order: 1;
     }
 
     &--catalog {
       display: block;
+      min-width: 167px;
       order: 4;
     }
 
     &--individual {
       display: block;
-      padding-left: 38px;
+      min-width: 167px;
       order: 5;
     }
 
     &--search {
       display: block;
+      min-width: 80px;
       width: 82px;
       margin-left: auto;
       border: 1px solid #dfdfdf;
@@ -169,11 +171,12 @@
     }
 
     &--delivery {
-      display: block;
+      display: inline-block;
+      min-width: 336px;
       padding-top: 20px;
-      margin-left: auto;
 
       @include font-regular (15px, 400, normal, 24px, $content-color);
+      text-align: right;
       order: 6;
     }
   }
@@ -232,25 +235,24 @@
 
 @media (min-width: $desktop-width) {
   .main-navigation__list {
-    max-width: 1050px;
+    width: 1050px;
     margin: 0 auto;
     justify-content: flex-start;
   }
 
   .main-navigation__item {
     display: block;
-    width: auto;
     padding: 0;
 
     &--logo {
       text-align: center;
       padding-top: 10px;
-      margin-left: -10px;
+      margin-left: -24px;
       order: 3;
     }
 
     &--catalog {
-      padding-right: 32px;
+      padding-right: 18px;
       border-right: 1px solid #dfdfdf;
       order: 1;
     }
@@ -283,6 +285,8 @@
     }
 
     &--delivery {
+      max-width: 768px;
+      flex-grow: 1;
       text-align: right;
       padding-top: 18px;
       order: 8;

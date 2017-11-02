@@ -41,6 +41,7 @@
 
 .main-footer__link--copyright {
   position: relative;
+  display: block;
 
   @include font-bold (19px, 400, normal, 18px, $header-color);
   text-decoration: none;
@@ -48,8 +49,8 @@
 
 .main-footer__icon {
   position: absolute;
-  right: -53px;
-  top: -3px;
+  right: 0;
+  top: -4px;
   fill: #63d1bb;
 }
 
@@ -87,11 +88,6 @@
 
   .main-footer__copyright {
     @include reset-indent;
-  }
-
-  .main-footer__icon {
-    top: -1px;
-    right: 5px;
   }
 
   .main-footer__description {
