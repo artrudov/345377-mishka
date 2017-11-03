@@ -8,6 +8,7 @@
     image: url("../img/bg-zigzag-line.svg");
     repeat: repeat-x;
     position-y: bottom;
+    position-x: 7px;
     size: 100% 17px;
   }
 }
@@ -85,6 +86,7 @@
   .promo {
     padding: 45px 50px 22px;
     background-size: 100% 24px;
+    background-position-x: 18px;
   }
 
   .promo__header {
@@ -146,6 +148,7 @@
 @media (min-width: $desktop-width) {
   .promo {
     padding: 121px 0 45px;
+    background-position-x: 29px;
   }
 
   .promo::before {

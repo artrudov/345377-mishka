@@ -6,6 +6,7 @@
     image: url("../img/bg-zigzag-line.svg");
     repeat: repeat-x;
     position-y: bottom;
+    position-x: 7px;
     size: 100% 17px;
   }
 }
@@ -78,6 +79,7 @@
     padding: 0;
     padding-bottom: 88px;
     background-size: 100% 24px;
+    background-position-x: 18px;
   }
 
   .feedback__container {
@@ -152,6 +154,7 @@
   .feedback {
     padding-top: 3px;
     padding-bottom: 90px;
+    background-position-x: 29px;
   }
 
   .feedback__container {
